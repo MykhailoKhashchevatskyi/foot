@@ -63,9 +63,10 @@
 
 		&__lenguage {
 			position: relative;
-			font-size: 20px;
-			margin-left: 0px;
+			cursor: pointer;
+			font-size: 20px; // Підгонка шрифту
 			font-weight: 800;
+			color: white;
 			margin: auto 0 auto auto;
 			&::after {
 				content: '';
@@ -74,8 +75,54 @@
 				height: 10px;
 				background-repeat: no-repeat;	
 				position: absolute;
-				top: 13px;
-				right: -12px;
+				top: 18px;
+				right: -2px;
+				@media (max-width: 744.98px) {
+					
+				}
+			}
+
+			.header__current-language {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 40px;
+				height: 40px;
+				background-color: transparent; // Без бордера
+				border-radius: 50%; // Коло
+				text-align: center;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.header__language-list {
+				display: none;
+				position: absolute;
+				top: 40px; // Відступ від поточного блоку
+				right: 0;
+				background-color: #ffffff10; // Напівпрозорий фон, як у бургер-меню
+				border-radius: 10px;
+				padding: 8px 0;
+				list-style: none;
+				backdrop-filter: blur(12px);
+				z-index: 10;
+
+				li {
+					padding: 4px 16px;
+					font-size: 16px;
+					font-weight: 800;
+					color: white;
+					text-align: center;
+					cursor: pointer;
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						background-color: #00000050; // Напівпрозорий чорний фон при наведенні
+					}
+				}
+			}
+
+			&.open .header__language-list {
+				display: block;
 			}
 		}
 
