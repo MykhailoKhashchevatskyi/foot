@@ -1,0 +1,125 @@
+.main {
+  &__wrapper {
+  }
+
+  &__border {
+    z-index: 3;
+  }
+
+  &__border-left-top {
+    position: fixed;
+    width: 20px;
+    top: 15px;
+    left: 15px;
+    @media (max-width: 768px) {
+      left: 10px;
+      top: 10px;
+    }
+  }
+
+  &__border-right-top {
+    position: fixed;
+    width: 20px;
+    top: 15px;
+    right: 15px;
+    @media (max-width: 768px) {
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  &__border-left-bottom {
+    position: fixed;
+    width: 20px;
+    bottom: 15px;
+    left: 15px;
+    @media (max-width: 768px) {
+      left: 10px;
+      bottom: 10px;
+    }
+  }
+
+  &__border-right-bottom {
+    position: fixed;
+    width: 20px;
+    bottom: 15px;
+    right: 15px;
+    @media (max-width: 768px) {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}
+
+.main {
+
+  &__contact {
+    position: fixed;
+    bottom: 25px;
+    right: 45px;
+    z-index: 3;
+    font-weight: 800;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      right: 35px;
+      bottom: 25px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 83px;
+    @media (max-width: 768px){
+      gap: 5px;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  }
+
+  &__message-icon {
+    max-width: 44px;
+    animation: ring 1.5s infinite;
+    @media (max-width: 768px) {
+      max-width: 25px;
+    }
+    @keyframes ring {
+      0% {
+        transform: rotate(0);
+      }
+      10% {
+        transform: rotate(15deg);
+      }
+      20% {
+        transform: rotate(-15deg);
+      }
+      30% {
+        transform: rotate(10deg);
+      }
+      40% {
+        transform: rotate(-10deg);
+      }
+      50% {
+        transform: rotate(5deg);
+      }
+      60% {
+        transform: rotate(-5deg);
+      }
+      70% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__link-text {
+    @media (max-width: 768px){
+      font-size: 17px;
+      text-wrap: nowrap;
+    }
+  }
+}

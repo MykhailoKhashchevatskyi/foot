@@ -1,0 +1,202 @@
+.header {
+	width: 100%;
+	align-items: center;
+		&__logo {
+			display: flex;
+			align-items: center;
+			max-width: 211px;
+			@media (max-width: 460.98px) {
+				max-width: 136px;
+			}
+		}
+
+		&__logo-image {
+		}
+
+		&__block {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			@media (max-width: 744.98px) {
+				position: fixed;
+				top: 64px;
+				right: 18px;
+				flex-direction: column;
+				justify-content: center;
+				width: 136px;
+				background-color: #ffffff10;
+				border-radius: 10px;
+				padding: 5px;
+				backdrop-filter: blur(12px);
+				display: none;
+			}
+		}
+
+		&__menu {
+		}
+
+		&__menu-item {
+
+		}
+
+		&__contacts {
+			display: flex;
+			margin: 0 16px 0 0;
+			@media (max-width: 744.98px) {
+				margin: 0;
+				padding: 16px 0;
+			}
+		}
+
+		&__fifa-logo {
+			margin-right: 32px;
+			max-width: 54.88px;
+			object-fit: contain;
+			@media (max-width: 744.98px){
+				display: none;
+			}
+		}
+
+		&__icon-block {
+		}
+
+		&__lenguage {
+			position: relative;
+			font-size: 20px;
+			margin-left: 0px;
+			font-weight: 800;
+			margin: auto 0 auto auto;
+			&::after {
+				content: '';
+				background-image: url('../img/header/arrow.png');
+				width: 10px;
+				height: 10px;
+				background-repeat: no-repeat;	
+				position: absolute;
+				top: 13px;
+				right: -12px;
+			}
+		}
+
+		&__wrapper {
+			width: 100%;
+			position: fixed;
+			gap: 16px;
+			padding: 48px;
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 744.98px) {
+				padding: 24px 16px;
+			}
+		}
+}
+.menu-items {
+	border-radius: 8px;
+	background-color: #ffffff10;
+	display: flex;
+	backdrop-filter: blur(12px);
+	@media (max-width: 744.98px){
+		flex-direction: column;
+		background-color: transparent;
+		backdrop-filter: none;
+	}
+		&__item {
+			border-radius: 10px;
+			padding: 12px 16px;
+			margin: 2px 0;
+			font-weight: 800;
+			line-height: 20px;
+			font-size: 20px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.5s ease;
+			text-align: center;
+			@media (max-width: 990px) {
+				font-size: 16px;
+			}
+			@media (max-width: 918px) {
+				font-size: 10px;
+				padding: 10px 12px;
+			}
+			@media (max-width: 744.98px){
+				font-size: 16px;
+				padding: 8px	36px;
+				align-items: center;
+			}
+			&:first-child{
+				margin: 2px 0 2px 2px;
+				padding: 12px 20px;
+				@media (max-width: 918px) {
+					padding: 10px 12px;
+				}
+				@media (max-width: 744.98px){
+					margin: 0;
+					padding: 8px 3 0px;
+				}
+			}
+			&:last-child{
+				margin: 2px 2px 2px 0px;
+				padding: 12px 20px;
+				@media (max-width: 918px) {
+					padding: 10px 12px;
+				}
+				@media (max-width: 744.98px){
+					margin: 0;
+					padding: 8px 30px;
+				}
+			}
+			&:hover{
+				background-color: #00000050;
+			}
+			&:active{
+				background-color: #00000050;
+			}
+		}
+}
+.icon-links {
+	display: flex;
+	gap: 6px;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+		&__icon {
+			max-width: 32px;
+			cursor: pointer;
+			@media (max-width: 744.98px) {
+				max-width: 24px;
+			}
+		}
+
+		&__tm {
+
+		}
+
+		&__instagram {
+		}
+
+		&__email {
+
+		}
+}
+
+.header {
+
+	&__burger {
+			&.open {
+				span{
+					transition: all 0.2s ease;
+					opacity: 1;
+					&:first-child {
+						transform: rotate(45deg) translate(5px, 4px);
+					}
+					&:nth-child(2) {
+						opacity: 0;
+					}
+					&:last-child {
+						transform: rotate(-45deg) translate(5px, -4px);
+					}
+				}
+			}
+	}
+}
