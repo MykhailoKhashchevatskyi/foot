@@ -6,5 +6,102 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+
+.main__hero-text {
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+
+  h1 {
+    font-size: 102px;
+    line-height: 102px;
+    font-weight: 700;
+    margin: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
+      line-height: 50px;
+      
+    }
+    @media (max-width: 380px) {
+      font-size: 35px;
+      line-height: 35px;
+      
+    }
+  }
+
+  p {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    margin: 10px 0 0;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    @media (max-width: 380px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.main__hero-image {
+  opacity: 0;
+  transform: scale(0.5); /* Початковий стан: зменшена картинка */
+  transition: all 0.8s ease-in-out; /* Плавна анімація */
+}
+
+.main__hero-image.visible {
+  opacity: 1;
+  transform: scale(1); /* Картинка повертається до нормального розміру */
+}
+
+.main__hero-text {
+  opacity: 0;
+  transform: translateY(-50px); /* Початковий стан: текст вище */
+  transition: all 0.8s ease-in-out; /* Плавна анімація */
+}
+
+.main__hero-text.visible {
+  opacity: 1;
+  transform: translateY(0); /* Текст повертається на місце */
+}
+
+.main__hero-content {
+  display: flex;
+  flex-direction: column; /* Розташування елементів вертикально */
+  justify-content: center; /* Вирівнювання по вертикалі */
+  align-items: center; /* Вирівнювання по горизонталі */
+  height: 100%; /* Займає всю висоту контейнера */
+  text-align: center; /* Центрування тексту */
+}
+
+.main__hero-image {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.5); /* Початковий стан: зменшена картинка */
+  transition: all 0.8s ease-in-out; /* Плавна анімація */
+}
+
+.main__hero-image.visible {
+  position: absolute;
+  opacity: 1;
+  transform: scale(1); /* Картинка повертається до нормального розміру */
+}
+
+.main__hero-text {
+  opacity: 0;
+  transform: translateY(-50px); /* Початковий стан: текст вище */
+  transition: all 0.8s ease-in-out; /* Плавна анімація */
+}
+
+.main__hero-text.visible {
+  opacity: 1;
+  transform: translateY(0); /* Текст повертається на місце */
 }

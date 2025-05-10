@@ -74,3 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const heroImage = document.querySelector('.main__hero-image'); // Знаходимо зображення
+  const heroText = document.querySelector('.main__hero-text'); // Знаходимо текстовий блок
+
+  let isImageVisible = true; // Початковий стан: зображення видиме
+
+  setInterval(() => {
+    if (isImageVisible) {
+      heroImage.classList.remove('visible'); // Ховаємо зображення
+      heroText.classList.add('visible'); // Показуємо текст
+    } else {
+      heroText.classList.remove('visible'); // Ховаємо текст
+      heroImage.classList.add('visible'); // Показуємо зображення
+    }
+    isImageVisible = !isImageVisible; // Змінюємо стан
+  }, 8000); // Зміна кожні 3 секунди
+});
