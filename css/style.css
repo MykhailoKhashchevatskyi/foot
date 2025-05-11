@@ -92,10 +92,10 @@ html {
   max-width: 1120px;
   margin: 0 auto;
 }
-@media (max-width: 1440.89px) {
+@media (max-width: 1500.89px) {
   .container {
     max-width: 1120px;
-    padding: 0 210px;
+    padding: 0 130px;
   }
 }
 @media (max-width: 1280.89px) {
@@ -648,7 +648,7 @@ html {
 }
 @media (max-width: 1280.98px) {
   .about__wrapper {
-    padding: 96px 0 90px 0;
+    padding: 96px 0 40px 0;
   }
 }
 @media (max-width: 744.98px) {
@@ -798,6 +798,10 @@ html {
   }
 }
 
+.services {
+  padding: 30px 0 10px 0;
+  border-top: 1px dashed var(--base-100_20, rgba(255, 255, 255, 0.2));
+}
 .services__wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -909,11 +913,24 @@ html {
   cursor: pointer;
 }
 
+.present {
+  border-top: 1px dashed var(--base-100_20, rgba(255, 255, 255, 0.2));
+}
 .present__wrapper {
   margin: 0 auto;
 }
 .present__block-title {
   margin: 0 0 56px 0;
+}
+@media (max-width: 824.98px) {
+  .present__block-title {
+    margin: 0 0 66px 0;
+  }
+}
+@media (max-width: 500.98px) {
+  .present__block-title {
+    margin: 0 0 36px 0;
+  }
 }
 .present__image-block {
   float: right;
@@ -1002,6 +1019,106 @@ html {
   }
 }
 
+.present__wrapper {
+  padding: 60px 0 60px 0;
+}
+.present__width {
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1500px) {
+  .present__width {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+}
+.present__block-swiper {
+  width: 1130px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+@media (max-width: 1500px) {
+  .present__block-swiper {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+@media (max-width: 1440px) {
+  .present__block-swiper {
+    width: 900px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__block-swiper {
+    width: 750px;
+  }
+}
+.present__item {
+  width: 352px;
+  padding: 20px 10px 20px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--base-100_20, rgba(255, 255, 255, 0.2));
+}
+@media (max-width: 1500px) {
+  .present__item {
+    width: 292px;
+    padding: 20px 10px 20px 20px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__item {
+    max-width: 240px;
+    padding: 10px 5px 10px 10px;
+  }
+}
+.present__item-title {
+  display: flex;
+  align-items: center;
+  max-height: 48px;
+  margin: 0 0 8px 0;
+}
+.present__img-container {
+  max-width: 38px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 16px 0 0;
+}
+.present__item-img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover; /* сохраняет пропорции и заполняет контейнер, обрезая лишнее */
+}
+.present__item-title-text {
+  color: var(--base-100_100, #FFF);
+  /* desktop/header-7 */
+  font-family: "Bebas Neue Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 21.6px */
+  text-transform: uppercase;
+}
+@media (max-width: 824.98px) {
+  .present__item-title-text {
+    font-size: 20px;
+  }
+}
+.present__item-text {
+  color: var(--base-100_100, #FFF);
+  /* desktop/body-M */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+}
+@media (max-width: 824.98px) {
+  .present__item-text {
+    font-size: 14px;
+  }
+}
 @font-face {
   font-family: "Bebas Neue Pro";
   src: local("Bebas Neue Pro SemiExpanded ExtraBold"), local("Bebas-Neue-Pro-SemiExpanded-ExtraBold"), url("../fonts/BebasNeuePro-SemiExpXBold.woff2") format("woff2"), url("../fonts/BebasNeuePro-SemiExpXBold.woff") format("woff"), url("../fonts/BebasNeuePro-SemiExpXBold.ttf") format("truetype");
