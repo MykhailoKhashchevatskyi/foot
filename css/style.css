@@ -94,13 +94,12 @@ html {
 }
 @media (max-width: 1440.89px) {
   .container {
-    max-width: 1020px;
+    max-width: 1120px;
     padding: 0 210px;
   }
 }
 @media (max-width: 1280.89px) {
   .container {
-    max-width: 1020px;
     padding: 0 130px;
   }
 }
@@ -291,19 +290,6 @@ html {
 .services__text-two.visible {
   display: block;
   opacity: 1; /* Плавне з'явлення тексту */
-}
-
-.services__block-width {
-  position: relative; /* Для позиционирования прогресс-бара */
-}
-.services__block-width .services__progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.7); /* Цвет прогресс-бара */
-  width: 0%; /* Начальное состояние */
-  transition: width 1s ease; /* Плавное изменение ширины */
 }
 
 .header {
@@ -656,23 +642,23 @@ html {
 }
 
 .about__wrapper {
-  padding: 96px 0 160px 0;
+  padding: 96px 0 90px 0;
   max-width: 800px;
   margin: 0 auto;
 }
 @media (max-width: 1280.98px) {
   .about__wrapper {
-    padding: 96px 0 160px 0;
+    padding: 96px 0 90px 0;
   }
 }
 @media (max-width: 744.98px) {
   .about__wrapper {
-    padding: 96px 0 160px 0;
+    padding: 96px 0 90px 0;
   }
 }
 @media (max-width: 360.98px) {
   .about__wrapper {
-    padding: 64px 0 160px 0;
+    padding: 64px 0 90px 0;
   }
 }
 .about__title {
@@ -815,7 +801,12 @@ html {
 .services__wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 46px 0 60px 0;
+  padding: 46px 0 120px 0;
+}
+@media (max-width: 744.98px) {
+  .services__wrapper {
+    padding: 46px 0 40px 0;
+  }
 }
 .services__title {
   position: relative;
@@ -872,7 +863,7 @@ html {
   align-items: stretch;
   gap: 12px;
   justify-content: center;
-  width: 1000px;
+  width: 940px;
 }
 .services__info-block {
   width: 300px;
@@ -888,7 +879,7 @@ html {
   font-style: normal;
   font-weight: 350;
   line-height: 120%; /* 19.2px */
-  margin: 0 0 16px 0;
+  margin: 0 0 4px 0;
 }
 .services__text-two {
   color: var(--base-100_100, #FFF);
@@ -898,7 +889,7 @@ html {
   font-style: normal;
   font-weight: 350;
   line-height: 120%; /* 19.2px */
-  margin: 0 0 24px 0;
+  margin: 0 0 4px 0;
 }
 .services__button-block {
   margin: 20px 0 0 0;
@@ -916,6 +907,99 @@ html {
   border-radius: 8px;
   border: 2px solid var(--base-100_100, #FFF);
   cursor: pointer;
+}
+
+.present__wrapper {
+  margin: 0 auto;
+}
+.present__block-title {
+  margin: 0 0 56px 0;
+}
+.present__image-block {
+  float: right;
+  margin: 0 0 0 10px;
+}
+.present__foot-img {
+  max-width: 332px;
+}
+@media (max-width: 1024.98px) {
+  .present__foot-img {
+    max-width: 220px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__foot-img {
+    max-width: 160px;
+  }
+}
+.present__title {
+  color: var(--base-100_100, #FFF);
+  /* desktop/header-4 */
+  font-family: "Bebas Neue Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 50.4px */
+  text-transform: uppercase;
+  max-width: 676px;
+  margin: 0 0 9px 0;
+}
+@media (max-width: 1024.98px) {
+  .present__title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.present__text {
+  color: var(--base-100_100, #FFF);
+  /* desktop/body-M */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+  max-width: 494px;
+}
+@media (max-width: 1024.98px) {
+  .present__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 824.98px) {
+  .present__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.present__information {
+  color: var(--base-100_100, #FFF);
+  /* desktop/body-M */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+  max-width: 494px;
+}
+@media (max-width: 1024.98px) {
+  .present__information {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 @font-face {

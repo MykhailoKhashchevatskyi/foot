@@ -116,17 +116,17 @@
 
 .about {
   &__wrapper {
-    padding: 96px 0 160px 0;
+    padding: 96px 0 90px 0;
     max-width: 800px;
     margin: 0 auto;
     @media (max-width: 1280.98px) {
-      padding: 96px 0 160px 0;
+      padding: 96px 0 90px 0;
     }
     @media (max-width: 744.98px) {
-      padding: 96px 0 160px 0;
+      padding: 96px 0 90px 0;
     }
     @media (max-width: 360.98px) {
-      padding: 64px 0 160px 0;
+      padding: 64px 0 90px 0;
     }
   }
 
@@ -298,7 +298,10 @@
   &__wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 46px 0 60px 0;
+    padding: 46px 0 120px 0;
+    @media (max-width: 744.98px) {
+      padding: 46px 0 40px 0;
+    }
   }
 
   &__title {
@@ -365,7 +368,7 @@
     align-items: stretch;
     gap: 12px;
     justify-content: center;
-    width: 1000px;
+    width: 940px;
   }
 
   &__info-block {
@@ -390,7 +393,7 @@
     font-style: normal;
     font-weight: 350;
     line-height: 120%; /* 19.2px */
-    margin: 0 0 16px 0;
+    margin: 0 0 4px 0;
   }
 
   &__text-two {
@@ -402,7 +405,7 @@
     font-style: normal;
     font-weight: 350;
     line-height: 120%; /* 19.2px */
-    margin: 0 0 24px 0;
+    margin: 0 0 4px 0;
   }
 
   &__button-block {
@@ -425,4 +428,97 @@
   }
 }
 .container {
+}
+
+
+
+
+.present {
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__block-title {
+    margin: 0 0 56px 0;
+  }
+
+  &__image-block {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  &__foot-img {
+    max-width: 332px;
+    @media (max-width: 1024.98px) {
+      max-width: 220px;
+    }
+    @media (max-width: 824.98px) {
+      max-width: 160px;
+    }
+  }
+
+  &__title {
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/header-4 */
+    font-family: "Bebas Neue Pro";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%; /* 50.4px */
+    text-transform: uppercase;
+    max-width: 676px;
+    margin: 0 0 9px 0;
+    @media (max-width: 1024.98px) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+    @media (max-width: 824.98px) {
+      font-size: 28px;
+      line-height: 28px;
+    }
+    @media (max-width: 824.98px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__text {
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/body-M */
+    font-family: "Bebas Neue Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 120%; /* 19.2px */
+    max-width: 494px;
+    @media (max-width: 1024.98px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    @media (max-width: 824.98px) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+.container {
+}
+
+.present__information{
+  color: var(--base-100_100, #FFF);
+
+  /* desktop/body-M */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+  max-width: 494px;
+  @media (max-width: 1024.98px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
