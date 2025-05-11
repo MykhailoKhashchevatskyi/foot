@@ -148,3 +148,26 @@
     }
   }
 }
+
+
+.services__read-this-button {
+  color: rgba(255, 255, 255, 0.397); /* Напівпрозорий текст */
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  &:hover {
+    color: rgba(255, 255, 255, 0.349); /* Повністю білий при наведенні */
+  }
+}
+
+.services__text-two {
+  display: none; /* Прихований текст за замовчуванням */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services__text-two.visible {
+  display: block;
+  opacity: 1; /* Плавне з'явлення тексту */
+}

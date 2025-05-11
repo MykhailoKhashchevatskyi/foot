@@ -92,3 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
     isImageVisible = !isImageVisible; // Змінюємо стан
   }, 5000); // Зміна кожні 3 секунди
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const readMoreButtons = document.querySelectorAll('.services__read-this-button');
+
+  readMoreButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Запобігаємо переходу за посиланням
+
+      const parentBlock = button.closest('.services__info-block'); // Знаходимо батьківський блок
+      const textTwo = parentBlock.querySelector('.services__text-two'); // Знаходимо другий текст
+
+      if (textTwo.classList.contains('visible')) {
+        // Якщо текст уже видимий, приховуємо його
+        textTwo.classList.remove('visible');
+        button.textContent = 'Read more+'; // Змінюємо текст кнопки
+      } else {
+        // Якщо текст прихований, показуємо його
+        textTwo.classList.add('visible');
+        button.textContent = 'show less'; // Змінюємо текст кнопки
+      }
+    });
+  });
+});

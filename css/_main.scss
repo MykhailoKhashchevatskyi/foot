@@ -116,7 +116,7 @@
 
 .about {
   &__wrapper {
-    padding: 96px 0 320px 0;
+    padding: 96px 0 160px 0;
     max-width: 800px;
     margin: 0 auto;
     @media (max-width: 1280.98px) {
@@ -178,6 +178,7 @@
     }
     @media (max-width: 460.98px) {
       font-size: 44px;
+      margin: 0 0 32px 0;
     }
   }
 
@@ -287,4 +288,141 @@
 
   &__info {
   }
+}
+
+//services
+
+
+.services {
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 96px 0 160px 0;
+  }
+
+  &__title {
+    position: relative;
+    color: var(--base-100_100, #FFF);
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 90%; /* 72px */
+    text-transform: uppercase;
+    margin: 0 0 56px 0;
+    &::before {
+      position: absolute;
+      content: 'services';
+      text-wrap: no-wrap;
+      top: -30px;
+      left: center;
+      opacity: 0.2;
+      background: radial-gradient(145.99% 128.12% at 50% 13.13%, var(--accent-lavabloom, #A569FF) 0%, var(--base-900_100, #000) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: blur(2px);
+    }
+    &::after {
+      position: absolute;
+      content: 'services';
+      text-wrap: no-wrap;
+      max-width: 266px;
+      top: 30px;
+      transform: translate(-100%);
+      left: center;
+      opacity: 0.2;
+      background: radial-gradient(145.99% 128.12% at 50% 13.13%, var(--accent-lavabloom, #A569FF) 0%, var(--base-900_100, #000) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: blur(2px);
+    }
+    @media (max-width: 1280.98px) {
+      
+    }
+    @media (max-width: 744.98px) {
+      
+    }
+    @media (max-width: 460.98px) {
+      font-size: 44px;
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__block-width {
+    // max-width: 100%;
+    // overflow-x: scroll;
+    // height: 560px;
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+  }
+
+  &__flex-direction {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    justify-content: center;
+    width: 1000px;
+  }
+
+  &__info-block {
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  &__video-block {
+  }
+
+  &__text-block {
+  }
+
+  &__text-one {
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/body-M */
+    font-family: "Bebas Neue Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 120%; /* 19.2px */
+    margin: 0 0 16px 0;
+  }
+
+  &__text-two {
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/body-M */
+    font-family: "Bebas Neue Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 120%; /* 19.2px */
+    margin: 0 0 24px 0;
+  }
+
+  &__button-block {
+    margin: 20px 0 0 0;
+  }
+
+  &__read-more-button {
+    color: var(--base-100_100, #FFF);
+    padding: 10px 16px;
+    /* desktop/small-button */
+    font-family: "Bebas Neue Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 16px */
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid var(--base-100_100, #FFF);
+    cursor: pointer;
+  }
+}
+.container {
 }
