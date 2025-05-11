@@ -115,3 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollContainer = document.querySelector('.services__block-width');
+  const progressBar = document.querySelector('.services__progress-bar');
+
+  scrollContainer.addEventListener('scroll', () => {
+    const scrollWidth = scrollContainer.scrollWidth; // Общая ширина контента
+    const clientWidth = scrollContainer.clientWidth; // Видимая ширина
+    const scrollLeft = scrollContainer.scrollLeft; // Текущая прокрутка
+
+    // Рассчитываем процент прокрутки
+    const scrollPercentage = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+
+    // Обновляем ширину прогресс-бара
+    progressBar.style.width = `${scrollPercentage}%`;
+  });
+});

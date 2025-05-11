@@ -171,3 +171,22 @@
   display: block;
   opacity: 1; /* Плавне з'явлення тексту */
 }
+
+
+
+
+
+.services__block-width {
+  position: relative; /* Для позиционирования прогресс-бара */
+
+
+  .services__progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.7); /* Цвет прогресс-бара */
+    width: 0%; /* Начальное состояние */
+    transition: width 1s ease; /* Плавное изменение ширины */
+  }
+}
