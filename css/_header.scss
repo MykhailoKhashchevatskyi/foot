@@ -18,7 +18,7 @@
 			align-items: center;
 			justify-content: space-between;
 			width: 100%;
-			@media (max-width: 744.98px) {
+			@media (max-width: 748.98px) {
 				position: fixed;
 				top: 64px;
 				right: 18px;
@@ -43,7 +43,7 @@
 		&__contacts {
 			display: flex;
 			margin: 0 16px 0 0;
-			@media (max-width: 744.98px) {
+			@media (max-width: 748.98px) {
 				margin: 0;
 				padding: 16px 0;
 			}
@@ -53,7 +53,7 @@
 			margin-right: 32px;
 			max-width: 54.88px;
 			object-fit: contain;
-			@media (max-width: 744.98px){
+			@media (max-width: 748.98px){
 				display: none;
 			}
 		}
@@ -77,7 +77,7 @@
 				position: absolute;
 				top: 18px;
 				right: -2px;
-				@media (max-width: 744.98px) {
+				@media (max-width: 748.98px) {
 					
 				}
 			}

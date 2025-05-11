@@ -90,5 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
       heroImage.classList.add('visible'); // Показуємо зображення
     }
     isImageVisible = !isImageVisible; // Змінюємо стан
-  }, 8000); // Зміна кожні 3 секунди
+  }, 5000); // Зміна кожні 3 секунди
 });

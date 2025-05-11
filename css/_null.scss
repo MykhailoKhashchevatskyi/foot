@@ -83,7 +83,7 @@ select {
 
 html {
   font-family: "Bebas Neue Pro";    
-  background: #210d58;
+  background: #000;
   color: #fff;
 }
 
@@ -91,12 +91,23 @@ html {
   max-width: 1120px;
   @media (max-width: 1440.89px) {
     max-width: 1020px;
+    padding: 0 210px;
+  }
+  @media (max-width: 1280.89px) {
+    max-width: 1020px;
+    padding: 0 130px;
   }
   @media (max-width: 744.89px) {
     max-width: 744px;
+    padding: 0 96px;
+  }
+  @media (max-width: 744.89px) {
+    max-width: 744px;
+    padding: 0 36px;
   }
   @media (max-width: 360.89px) {
     max-width: 360px;
+    padding: 0 36px;
   }
   margin: 0 auto;
 }

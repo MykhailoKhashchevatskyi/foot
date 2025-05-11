@@ -84,7 +84,7 @@ select {
 }
 html {
   font-family: "Bebas Neue Pro";
-  background: #210d58;
+  background: #000;
   color: #fff;
 }
 
@@ -95,16 +95,31 @@ html {
 @media (max-width: 1440.89px) {
   .container {
     max-width: 1020px;
+    padding: 0 210px;
+  }
+}
+@media (max-width: 1280.89px) {
+  .container {
+    max-width: 1020px;
+    padding: 0 130px;
   }
 }
 @media (max-width: 744.89px) {
   .container {
     max-width: 744px;
+    padding: 0 96px;
+  }
+}
+@media (max-width: 744.89px) {
+  .container {
+    max-width: 744px;
+    padding: 0 36px;
   }
 }
 @media (max-width: 360.89px) {
   .container {
     max-width: 360px;
+    padding: 0 36px;
   }
 }
 
@@ -276,7 +291,7 @@ html {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 744.98px) {
+@media (max-width: 748.98px) {
   .header__block {
     position: fixed;
     top: 64px;
@@ -296,7 +311,7 @@ html {
   display: flex;
   margin: 0 16px 0 0;
 }
-@media (max-width: 744.98px) {
+@media (max-width: 748.98px) {
   .header__contacts {
     margin: 0;
     padding: 16px 0;
@@ -308,7 +323,7 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 744.98px) {
+@media (max-width: 748.98px) {
   .header__fifa-logo {
     display: none;
   }
@@ -605,6 +620,162 @@ html {
   transform: translateY(0); /* Текст повертається на місце */
 }
 
+.about__wrapper {
+  padding: 96px 0 320px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 1280.98px) {
+  .about__wrapper {
+    padding: 96px 0 160px 0;
+  }
+}
+@media (max-width: 744.98px) {
+  .about__wrapper {
+    padding: 96px 0 160px 0;
+  }
+}
+@media (max-width: 360.98px) {
+  .about__wrapper {
+    padding: 64px 0 160px 0;
+  }
+}
+.about__title {
+  position: relative;
+  color: var(--base-100_100, #FFF);
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 90%; /* 72px */
+  text-transform: uppercase;
+  margin: 0 0 56px 0;
+}
+.about__title::before {
+  position: absolute;
+  content: "about us";
+  text-wrap: no-wrap;
+  top: -30px;
+  left: center;
+  opacity: 0.2;
+  background: radial-gradient(145.99% 128.12% at 50% 13.13%, var(--accent-lavabloom, #A569FF) 0%, var(--base-900_100, #000) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(2px);
+}
+@media (max-width: 460.98px) {
+  .about__title {
+    font-size: 44px;
+  }
+}
+.about__image-block {
+  float: right;
+  margin: 0 0 0 10px;
+}
+.about__foot-img {
+  max-width: 277px;
+  margin: 0 0 10.29px 0;
+}
+@media (max-width: 1280.98px) {
+  .about__foot-img {
+    max-width: 186px;
+  }
+}
+@media (max-width: 744.98px) {
+  .about__foot-img {
+    max-width: 128px;
+  }
+}
+@media (max-width: 460.98px) {
+  .about__foot-img {
+    max-width: 128px;
+  }
+}
+@media (max-width: 1280.98px) {
+  .about__license-img {
+    max-width: 186px;
+  }
+}
+@media (max-width: 744.98px) {
+  .about__license-img {
+    max-width: 128px;
+  }
+}
+@media (max-width: 460.98px) {
+  .about__license-img {
+    max-width: 128px;
+  }
+}
+.about__subtitle-block {
+  color: var(--base-100_100, #FFF);
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+  max-width: 492px;
+  margin: 0 0 32px 0;
+}
+@media (max-width: 744.98px) {
+  .about__subtitle-block {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 8px 0;
+  }
+}
+@media (max-width: 500.98px) {
+  .about__subtitle-block {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 8px 0;
+  }
+}
+.about__subtitle {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+}
+@media (max-width: 744.98px) {
+  .about__subtitle {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 8px 0;
+  }
+}
+@media (max-width: 500.98px) {
+  .about__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 8px 0;
+  }
+}
+.about__text-cover {
+  max-width: 492px;
+}
+.about__inf {
+  color: var(--base-100_100, #FFF);
+  font-family: "Bebas Neue Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 24px */
+}
+.about__inf:first-child {
+  margin: 0 0 16px 0;
+}
+@media (max-width: 744.98px) {
+  .about__inf:first-child {
+    margin: 0 0 8px 0;
+  }
+}
+@media (max-width: 744.98px) {
+  .about__inf {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 @font-face {
   font-family: "Bebas Neue Pro";
   src: local("Bebas Neue Pro SemiExpanded ExtraBold"), local("Bebas-Neue-Pro-SemiExpanded-ExtraBold"), url("../fonts/BebasNeuePro-SemiExpXBold.woff2") format("woff2"), url("../fonts/BebasNeuePro-SemiExpXBold.woff") format("woff"), url("../fonts/BebasNeuePro-SemiExpXBold.ttf") format("truetype");
@@ -630,7 +801,7 @@ html {
   height: 24px;
   margin: 2px 0 0 0;
 }
-@media (max-width: 744px) {
+@media (max-width: 748px) {
   .header__burger {
     display: block;
   }
