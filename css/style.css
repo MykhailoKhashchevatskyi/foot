@@ -1044,7 +1044,7 @@ html {
     gap: 12px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
   .present__block-swiper {
     width: 900px;
   }
@@ -1055,7 +1055,7 @@ html {
   }
 }
 .present__item {
-  width: 352px;
+  width: 363px;
   padding: 20px 10px 20px 20px;
   border-radius: 12px;
   border: 1px solid var(--base-100_20, rgba(255, 255, 255, 0.2));

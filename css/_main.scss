@@ -573,7 +573,7 @@
       justify-content: center;
       gap: 12px;
     }
-    @media (max-width: 1440px) {
+    @media (max-width: 1500px) {
       width: 900px;
     }
     @media (max-width: 824.98px) {
@@ -582,7 +582,7 @@
   }
 
   &__item {
-    width: 352px;
+    width: 363px;
     padding: 20px 10px 20px 20px;
     border-radius: 12px;
     border: 1px solid var(--base-100_20, rgba(255, 255, 255, 0.20));
