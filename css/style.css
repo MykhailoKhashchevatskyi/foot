@@ -548,41 +548,51 @@ html {
   text-align: center;
   color: white;
   font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main__hero-text h1 {
-  font-size: 102px;
-  line-height: 102px;
-  font-weight: 700;
+  color: var(--base-100_100, #FFF);
+  text-align: center;
+  /* desktop/hero */
+  font-family: "Bebas Neue Pro";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 85%; /* 102px */
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 768px) {
+  .main__hero-text h1 {
+    font-size: 64px;
+    max-width: 293px;
+  }
+}
+.main__hero-text h2 {
+  color: var(--base-100_100, #FFF);
+  /* desktop/subtitle */
+  font-family: "Bebas Neue Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 85%; /* 47.6px */
+  text-transform: uppercase;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
-  .main__hero-text h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 380px) {
-  .main__hero-text h1 {
-    font-size: 35px;
-    line-height: 35px;
-  }
-}
-.main__hero-text p {
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 400;
-  margin: 10px 0 0;
-}
-@media screen and (max-width: 768px) {
-  .main__hero-text p {
+@media (max-width: 768px) {
+  .main__hero-text h2 {
+    color: var(--base-100_100, #FFF);
+    text-align: center;
+    max-width: 296px;
+    /* mobile/subtitle */
+    font-family: "Bebas Neue Pro";
     font-size: 18px;
-    line-height: 18px;
-  }
-}
-@media (max-width: 380px) {
-  .main__hero-text p {
-    font-size: 16px;
-    line-height: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 85%; /* 20.4px */
+    text-transform: uppercase;
   }
 }
 
