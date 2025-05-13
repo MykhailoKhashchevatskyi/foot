@@ -1424,9 +1424,14 @@ html {
   text-transform: uppercase;
   padding: 12px 30px;
 }
-@media (max-width: 476px) {
+@media (max-width: 501px) {
   .tab__button-step {
     font-size: 20px;
+  }
+}
+@media (max-width: 426px) {
+  .tab__button-step {
+    font-size: 16px;
   }
 }
 .tab__button-sup {
@@ -1443,9 +1448,14 @@ html {
   text-transform: uppercase;
   padding: 12px 30px;
 }
-@media (max-width: 476px) {
+@media (max-width: 501px) {
   .tab__button-sup {
     font-size: 20px;
+  }
+}
+@media (max-width: 426px) {
+  .tab__button-sup {
+    font-size: 16px;
   }
 }
 
@@ -1453,9 +1463,19 @@ html {
 .tab__button-sup.active {
   border-radius: 6px;
   background: var(--base-900_100, #000);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
   margin: 2px;
+}
+@media (max-width: 501px) {
+  .tab__button-step.active,
+  .tab__button-sup.active {
+    font-size: 20px;
+  }
+}
+@media (max-width: 426px) {
+  .tab__button-step.active,
+  .tab__button-sup.active {
+    font-size: 16px;
+  }
 }
 
 .academies__wrapper {

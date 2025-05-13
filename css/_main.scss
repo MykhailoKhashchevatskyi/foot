@@ -977,8 +977,14 @@
 .tab__button-sup.active {
   border-radius: 6px;
   background: var(--base-900_100, #000);
-  backdrop-filter: blur(12px);
+  // backdrop-filter: blur(12px);
   margin: 2px;
+  @media (max-width: 501px) {
+    font-size: 20px;
+  }
+  @media (max-width: 426px) {
+    font-size: 16px;
+  }
 }
 
 
