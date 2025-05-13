@@ -175,3 +175,34 @@
 
 
 
+.block-arrow-right {
+  position: sticky;
+  display: inline-block;
+  content: '';
+  top: 40%;
+  left: 0;
+  width: 80px;
+  @media (max-width: 745px) {
+    width: 30px;
+    top: 47%;
+  }
+}
+.block-arrow-left {
+  position: sticky;
+  display: inline-block;
+  content: '';
+  top: 40%;
+  left: 100%;
+  width: 80px;
+  @media (max-width: 745px) {
+    width: 30px;
+    top: 47%;
+  }
+}
+
+.right__img{
+  max-width: 100%;
+}
+.left__img{
+  max-width: 100%;
+}
