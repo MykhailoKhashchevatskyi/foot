@@ -1280,6 +1280,9 @@ html {
 .tab__items-icon {
   min-width: 36px;
 }
+.tab__items-content {
+  padding: 5px 0 0 0;
+}
 .tab__item-name {
   color: var(--base-100_100, #FFF);
   /* desktop/header-7 */
