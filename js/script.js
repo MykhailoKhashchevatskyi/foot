@@ -220,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Додаємо клас для початкового стану border-елементів
   body.classList.add('preloader-active');
 
+  // Забороняємо прокручування сторінки
+  body.style.overflow = 'hidden';
+
   // Імітація завантаження сторінки
   setTimeout(() => {
     // Видаляємо прелоадер після 3 секунд
@@ -228,6 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Повертаємо border-елементи на місце
     body.classList.remove('preloader-active');
+
+    // Дозволяємо прокручування сторінки
+    body.style.overflow = '';
 
     // Видаляємо прелоадер з DOM через 0.5 секунди (щоб завершити анімацію)
     setTimeout(() => {
