@@ -331,6 +331,8 @@ html {
 }
 
 .header {
+  position: relative;
+  z-index: 100;
   width: 100%;
   align-items: center;
 }
@@ -749,6 +751,7 @@ html {
 .about__foot-img {
   max-width: 277px;
   margin: 0 0 10.29px 0;
+  position: relative;
 }
 @media (max-width: 1280.98px) {
   .about__foot-img {
