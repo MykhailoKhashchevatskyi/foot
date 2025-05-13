@@ -115,3 +115,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttonStep = document.querySelector('.tab__button-step');
+  const buttonSup = document.querySelector('.tab__button-sup');
+  const tabStep = document.querySelector('.tab__step');
+  const tabSupport = document.querySelector('.tab__support');
+
+  // Функція для активації кнопки та відображення відповідного блоку
+  const toggleTabs = (activeButton, inactiveButton, showTab, hideTab) => {
+    activeButton.classList.add('active');
+    inactiveButton.classList.remove('active');
+    showTab.style.display = 'block';
+    hideTab.style.display = 'none';
+  };
+
+  // Функція для перевірки ширини екрану
+  const handleResize = () => {
+    if (window.innerWidth < 899) {
+      // Додаємо обробники подій для кнопок
+      buttonStep.addEventListener('click', () => {
+        toggleTabs(buttonStep, buttonSup, tabStep, tabSupport);
+      });
+
+      buttonSup.addEventListener('click', () => {
+        toggleTabs(buttonSup, buttonStep, tabSupport, tabStep);
+      });
+
+      // Встановлюємо початковий стан
+      toggleTabs(buttonStep, buttonSup, tabStep, tabSupport);
+    } else {
+      // Скидаємо стилі та видаляємо обробники подій при ширині більше 899
+      buttonStep.classList.remove('active');
+      buttonSup.classList.remove('active');
+      tabStep.style.display = 'block';
+      tabSupport.style.display = 'block';
+    }
+  };
+
+  // Викликаємо функцію при завантаженні сторінки
+  handleResize();
+
+  // Додаємо обробник події для зміни розміру вікна
+  window.addEventListener('resize', handleResize);
+});
