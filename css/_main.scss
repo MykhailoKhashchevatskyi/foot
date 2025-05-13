@@ -941,8 +941,11 @@
     line-height: 90%; /* 25.2px */
     text-transform: uppercase;
     padding: 12px 30px;
-    @media (max-width: 476px) {
+    @media (max-width: 501px) {
       font-size: 20px;
+    }
+    @media (max-width: 426px) {
+      font-size: 16px;
     }
   }
 
@@ -960,8 +963,11 @@
     line-height: 90%; /* 25.2px */
     text-transform: uppercase;
     padding: 12px 30px;
-    @media (max-width: 476px) {
+    @media (max-width: 501px) {
       font-size: 20px;
+    }
+    @media (max-width: 426px) {
+      font-size: 16px;
     }
   }
 }
