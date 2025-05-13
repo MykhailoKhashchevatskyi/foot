@@ -3,11 +3,12 @@
   }
 
   &__border {
-    z-index: 3;
+    // z-index: 998;
   }
 
   &__border-left-top {
     position: fixed;
+    z-index: 998;
     width: 20px;
     top: 15px;
     left: 15px;
@@ -19,6 +20,7 @@
 
   &__border-right-top {
     position: fixed;
+    z-index: 998;
     width: 20px;
     top: 15px;
     right: 15px;
@@ -30,6 +32,7 @@
 
   &__border-left-bottom {
     position: fixed;
+    z-index: 998;
     width: 20px;
     bottom: 15px;
     left: 15px;
@@ -41,6 +44,7 @@
 
   &__border-right-bottom {
     position: fixed;
+    z-index: 998;
     width: 20px;
     bottom: 15px;
     right: 15px;
@@ -205,4 +209,112 @@
 }
 .left__img{
   max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Прелоадер */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Чорний фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 600; /* Поверх усього контенту */
+}
+
+.preloader__content {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  @media (max-width: 980px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.preloader__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  animation: fade 2s infinite;
+}
+
+.preloader__image.image-1 {
+  animation-delay: 0s;
+}
+
+.preloader__image.image-2 {
+  animation-delay: 1s;
+}
+
+/* Анімація для зникнення та появи */
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Початкове розташування border-елементів */
+.main__border-left-top,
+.main__border-right-top,
+.main__border-left-bottom,
+.main__border-right-bottom {
+  transform: translate(0, 0);
+  transition: transform 1s ease;
+  z-index: 9999;
+}
+
+.preloader-active .main__border-left-top {
+  transform: translate(300px, 200px);
+  @media (max-width: 1200px) {
+    transform: translate(50px, 200px);
+    
+  }
+}
+
+.preloader-active .main__border-right-top {
+  transform: translate(-300px, 200px);
+  @media (max-width: 1200px) {
+    transform: translate(-50px, 200px);
+    
+  }
+}
+
+.preloader-active .main__border-left-bottom {
+  transform: translate(300px, -200px);
+  @media (max-width: 1200px) {
+    transform: translate(50px, -200px);
+    
+  }
+}
+
+.preloader-active .main__border-right-bottom {
+  transform: translate(-300px, -200px);
+  @media (max-width:1200px) {
+    transform: translate(-50px, -200px);
+    
+  }
 }

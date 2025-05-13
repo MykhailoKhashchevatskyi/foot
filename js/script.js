@@ -208,3 +208,30 @@ document.addEventListener('DOMContentLoaded', () => {
   // Додаємо обробник події для зміни розміру вікна
   window.addEventListener('resize', handleResize);
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const preloader = document.querySelector('.preloader');
+  const body = document.body;
+
+  // Додаємо клас для початкового стану border-елементів
+  body.classList.add('preloader-active');
+
+  // Імітація завантаження сторінки
+  setTimeout(() => {
+    // Видаляємо прелоадер після 3 секунд
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+
+    // Повертаємо border-елементи на місце
+    body.classList.remove('preloader-active');
+
+    // Видаляємо прелоадер з DOM через 0.5 секунди (щоб завершити анімацію)
+    setTimeout(() => {
+      preloader.remove();
+    }, 500);
+  }, 6000); // Мінімальний час прелоадера — 3 секунди
+});
