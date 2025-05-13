@@ -233,5 +233,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       preloader.remove();
     }, 500);
-  }, 6000); // Мінімальний час прелоадера — 3 секунди
+  }, 4000); // Мінімальний час прелоадера — 3 секунди
 });
