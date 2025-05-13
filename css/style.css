@@ -315,6 +315,7 @@ html {
 @media (max-width: 748.98px) {
   .header__block {
     position: fixed;
+    z-index: 100;
     top: 64px;
     right: 18px;
     flex-direction: column;
@@ -1108,7 +1109,6 @@ html {
 }
 .present__img-container {
   max-width: 38px;
-  position: relative;
   overflow: hidden;
   margin: 0 16px 0 0;
 }
@@ -1363,8 +1363,6 @@ html {
   border-radius: 8px;
   background: linear-gradient(0deg, #221930 -16.67%, #493565 120%);
   box-shadow: 0px 0px 40px 0px rgba(165, 105, 255, 0.4);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
 }
 @media (min-width: 900px) {
   .tab__buttons {

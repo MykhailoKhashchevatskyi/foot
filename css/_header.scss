@@ -20,6 +20,7 @@
 			width: 100%;
 			@media (max-width: 748.98px) {
 				position: fixed;
+				z-index: 100;
 				top: 64px;
 				right: 18px;
 				flex-direction: column;

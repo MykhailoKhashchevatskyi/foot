@@ -630,7 +630,7 @@
   &__img-container{
     // max-height: 38px;
     max-width: 38px;
-    position: relative;
+    // position: relative;
     overflow: hidden;
     margin: 0 16px 0 0;
   }
@@ -920,7 +920,7 @@
     border-radius: 8px;
     background: linear-gradient(0deg, #221930 -16.67%, #493565 120%);
     box-shadow: 0px 0px 40px 0px rgba(165, 105, 255, 0.40);
-    backdrop-filter: blur(12px);
+    // backdrop-filter: blur(12px);
     @media (min-width: 900px) {
       display:none;
     }
