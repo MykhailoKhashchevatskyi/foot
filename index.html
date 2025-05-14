@@ -22,9 +22,9 @@
         <div class="header__block">
           <nav class="header__menu">
             <ul class="header__menu-item menu-items">
-              <li class="menu-items__item"><a href="">home</a></li>
-              <li class="menu-items__item"><a href="">about us</a></li>
-              <li class="menu-items__item"><a href="">services</a></li>
+              <li class="menu-items__item"><a href="#">home</a></li>
+              <li class="menu-items__item"><a href="#about">about us</a></li>
+              <li class="menu-items__item"><a href="#services">services</a></li>
               <li class="menu-items__item"><a href="">contact us</a></li>
             </ul>
           </nav>
@@ -32,13 +32,15 @@
             <img src="./img/header/fifa.png" alt="fifa logotype" class="header__fifa-logo">
             <div class="header__icon-block icon-links">
               <div class="icon-links__icon">
-                <img src="./img/header/tm-icon.svg" alt="tm link button" class="icon-links__tm">
+                <img src="./img/header/tm-icon.svg" alt="tm link button" class="icon-links__tm" onclick="window.open('https://www.transfermarkt.com/phantom-football-agency/beraterfirma/berater/9663#google_vignette', '_blank')">
               </div>
               <div class="icon-links__icon">
-                <img src="./img/header/instagram-icon.svg" alt="instagram link button" class="icon-links__instagram">
+                <img src="./img/header/instagram-icon.svg" alt="instagram link button" class="icon-links__instagram" onclick="window.open('https://www.instagram.com/phantomagency?igsh=MXNvMHZiMDlueDJqNQ==', '_blank')">
               </div>
               <div class="icon-links__icon">
-                <img src="./img/header/email-icon.svg" alt="email link button" class="icon-links__email">
+                <a href="mailto:phantomfootballagency@gmail.com">
+                  <img src="./img/header/email-icon.svg" alt="email link button" class="icon-links__email">
+                </a>
               </div>
             </div>
           </div>
@@ -83,7 +85,7 @@
               </div>
             </div>
         </section>
-        <secttion class="about">
+        <secttion class="about" id="about">
           <div class="block-arrow-right">
             <img src="./img/border-arrow-left.png" alt="" .class="right__img">
           </div>
@@ -114,7 +116,7 @@
             </div>
           </div>
         </secttion>
-        <section class="services">
+        <section class="services" id="services">
           <div class="container">
             <div class="services__wrapper">
               <h2 class="services__title">services</h2>
@@ -130,7 +132,7 @@
                     </div>
                     <a href="#" class="services__read-this-button">Read more+</a>
                     <div class="services__button-block">
-                      <a href="" class="services__read-more-button">learn more</a>
+                      <a href="#present" class="services__read-more-button">learn more</a>
                     </div>
                   </div>
                   <div class="services__info-block">
@@ -143,7 +145,7 @@
                     </div>
                     <a href="#" class="services__read-this-button">Read more+</a>
                     <div class="services__button-block">
-                      <a href="" class="services__read-more-button">learn more</a>
+                      <a href="#trials" class="services__read-more-button">learn more</a>
                     </div>
                   </div>
                   <div class="services__info-block">
@@ -159,7 +161,7 @@
                     </div>
                     <a href="#" class="services__read-this-button">Read more+</a>
                     <div class="services__button-block">
-                      <a href="" class="services__read-more-button">learn more</a>
+                      <a href="#academies" class="services__read-more-button">learn more</a>
                     </div>
                   </div>
                 </div>
@@ -167,7 +169,7 @@
             </div>
           </div>
         </section>
-        <section class="present">
+        <section class="present" id="present">
           <div class="container">
             <div class="present__wrapper">
               <div class="present__block-title">
@@ -258,7 +260,7 @@
             </div>
           </div>
         </section>
-        <section class="trials">
+        <section class="trials" id="trials">
           <div class="container">
             <div class="trials__wrapper">
               <div class="trials__block-title">
@@ -378,7 +380,7 @@
             </div>
           </div>
         </section>
-        <section class="academies">
+        <section class="academies" id="academies">
           <div class="container">
             <div class="academies__wrapper">
               <div class="academies__block-title">
