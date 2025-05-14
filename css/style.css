@@ -959,9 +959,9 @@ html {
   padding: 30px 0 10px 0;
 }
 .services__wrapper {
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 46px 0 120px 0;
+  padding: 90px 0 90px 0;
   border-top: 1px dashed var(--base-100_20, rgba(255, 255, 255, 0.2));
 }
 @media (max-width: 744.98px) {
@@ -1028,14 +1028,20 @@ html {
   display: flex;
   align-items: stretch;
   gap: 12px;
-  justify-content: center;
-  width: 940px;
+  justify-content: space-between;
+  width: 1120px;
 }
 .services__info-block {
+  position: relative;
   width: 300px;
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 10px 0;
+}
+@media (min-width: 1440px) {
+  .services__info-block {
+    width: 332px;
+  }
 }
 .services__text-one {
   color: var(--base-100_100, #FFF);
@@ -1073,6 +1079,14 @@ html {
   border-radius: 8px;
   border: 2px solid var(--base-100_100, #FFF);
   cursor: pointer;
+}
+.services__read-more-button:hover {
+  background: var(--base-100_100, #FFF);
+  color: var(--base-900_100, #000);
+}
+.services__read-more-button:active {
+  background: var(--base-100_100, rgba(255, 255, 255, 0.4862745098));
+  color: var(--base-900_100, rgba(0, 0, 0, 0.431372549));
 }
 
 .present__wrapper {
@@ -1254,15 +1268,20 @@ html {
   margin: 0 0 8px 0;
 }
 .present__img-container {
-  max-width: 38px;
-  overflow: hidden;
-  margin: 0 16px 0 0;
+  margin: 0 12px 0 0;
+  width: 38px;
+  height: 38px;
+  overflow: hidden; /* Обрізає все, що виходить за межі контейнера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .present__item-img {
-  height: 100px;
-  width: 100px;
+  width: 96px;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* сохраняет пропорции и заполняет контейнер, обрезая лишнее */
+     object-fit: cover; /* Зберігає пропорції та заповнює контейнер */
+  transform: scale(3); /* Збільшує центральну область */
 }
 .present__item-title-text {
   color: var(--base-100_100, #FFF);
@@ -1273,10 +1292,12 @@ html {
   font-weight: 700;
   line-height: 90%; /* 21.6px */
   text-transform: uppercase;
+  max-width: 180px;
 }
 @media (max-width: 824.98px) {
   .present__item-title-text {
     font-size: 20px;
+    max-width: 170px;
   }
 }
 .present__item-text {
@@ -1787,6 +1808,156 @@ html {
 
 .align-center {
   align-items: center;
+}
+
+.services__video-block-one {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрування по вертикалі */
+  overflow: hidden; /* Обрізання верхньої та нижньої частини */
+  height: 224px;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1440px) {
+  .services__video-block-one {
+    height: 180px;
+  }
+}
+.services__video-block-one::before {
+  z-index: 2;
+  content: "Professional Career Management for Players";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: var(--base-100_100, #FFF);
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+}
+.services__video-one {
+  position: relative;
+  width: 100%; /* Відео займає всю ширину контейнера */
+  height: 100%; /* Відео займає всю висоту контейнера */
+  -o-object-fit: cover;
+     object-fit: cover; /* Обрізання верхньої та нижньої частини */
+}
+.services__video-block-two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрування по вертикалі */
+  overflow: hidden; /* Обрізання верхньої та нижньої частини */
+  height: 224px;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1440px) {
+  .services__video-block-two {
+    height: 180px;
+  }
+}
+.services__video-block-two::before {
+  z-index: 2;
+  content: "Football Trials/Tryouts";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: var(--base-100_100, #FFF);
+  max-width: 165px;
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+}
+.services__video-block-two::after {
+  z-index: 2;
+  content: "18-23 y.o.";
+  position: absolute;
+  left: 10px;
+  bottom: 70px;
+  color: var(--base-100_50, rgba(255, 255, 255, 0.5));
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+}
+.services__video-two {
+  position: relative;
+  width: 100%; /* Відео займає всю ширину контейнера */
+  height: 100%; /* Відео займає всю висоту контейнера */
+  -o-object-fit: cover;
+     object-fit: cover; /* Обрізання верхньої та нижньої частини */
+}
+.services__video-block-three {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрування по вертикалі */
+  overflow: hidden; /* Обрізання верхньої та нижньої частини */
+  height: 224px;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1440px) {
+  .services__video-block-three {
+    height: 180px;
+  }
+}
+.services__video-block-three::before {
+  z-index: 2;
+  content: "Professional Career Management for Players";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: var(--base-100_100, #FFF);
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+}
+.services__video-block-three::after {
+  z-index: 2;
+  content: "13-18 y.o.";
+  position: absolute;
+  width: 200px;
+  left: 10px;
+  bottom: 70px;
+  color: var(--base-100_50, rgba(255, 255, 255, 0.5));
+  /* desktop/header-6 */
+  font-family: "Bebas Neue Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 25.2px */
+  text-transform: uppercase;
+}
+.services__video-three {
+  position: relative;
+  width: 100%; /* Відео займає всю ширину контейнера */
+  height: 100%; /* Відео займає всю висоту контейнера */
+  -o-object-fit: cover;
+     object-fit: cover; /* Обрізання верхньої та нижньої частини */
+}
+
+.services__license-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 @font-face {
