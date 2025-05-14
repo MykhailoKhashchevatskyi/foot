@@ -1377,8 +1377,22 @@
   }
 }
 
-.services__license-img{
+.services__license{
   position: absolute;
   top: 10px;
   left: 10px;
+  border-radius: 8px;
+  min-width: 182px;
+  min-height: 48px;
+  border: 1px solid var(--base-100_10, rgba(255, 255, 255, 0.10));
+  background: var(--base-100_10, rgba(255, 255, 255, 0.10));
+  backdrop-filter: blur(12px);
+}
+
+.services__license-img{
+  position: absolute;
+  min-width: 180px;
+  min-height: 32px;
+  top: 0px; 
+  left: 0px;
 }
