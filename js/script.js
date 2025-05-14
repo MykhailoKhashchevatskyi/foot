@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__block');
-const menuItems = document.querySelectorAll('.manu-items__item');
+const menuItems = document.querySelectorAll('.menu-items__item a'); // Вибираємо всі посилання в меню
 
 burgerMenu.addEventListener('click', (event) => {
   event.stopPropagation(); // Зупиняємо спливання події
@@ -15,12 +15,12 @@ burgerMenu.addEventListener('click', (event) => {
   menu.classList.toggle('open');
 });
 
-// Додаємо обробник події для кожного елемента меню
+// Додаємо обробник події для кожного посилання в меню
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
     if (menu.classList.contains('open')) {
-      burgerMenu.classList.remove('open');
-      menu.classList.remove('open');
+      burgerMenu.classList.remove('open'); // Закриваємо бургер-меню
+      menu.classList.remove('open'); // Закриваємо меню
     }
   });
 });
@@ -36,44 +36,38 @@ document.addEventListener('click', (event) => {
 document.addEventListener('DOMContentLoaded', () => {
   const languageBlock = document.querySelector('.header__lenguage');
   const currentLanguage = document.querySelector('.header__current-language');
-  const languageList = document.querySelector('.header__language-list');
+  const languageItems = document.querySelectorAll('.header__language-list li'); // Вибираємо всі <li>
 
-  // Toggle language list visibility
+  // Відкриття/закриття меню мов
   languageBlock.addEventListener('click', (event) => {
     event.stopPropagation(); // Зупиняємо спливання події
-
-    // Закриваємо бургер-меню, якщо воно відкрите
-    if (menu.classList.contains('open')) {
-      burgerMenu.classList.remove('open');
-      menu.classList.remove('open');
-    }
-
     languageBlock.classList.toggle('open');
   });
 
-  // Change language on selection
-  languageList.addEventListener('click', (event) => {
-    if (event.target.tagName === 'LI') {
-      const selectedLanguage = event.target.getAttribute('data-lang');
+  // Зміна мови при кліку на <li>
+  languageItems.forEach(item => {
+    item.addEventListener('click', (event) => {
+      const selectedLanguage = event.target.getAttribute('data-lang'); // Отримуємо мову з data-lang
       const previousLanguage = currentLanguage.textContent;
-
-      // Swap current language with selected language
+      // Змінюємо поточну мову
       currentLanguage.textContent = selectedLanguage;
       event.target.textContent = previousLanguage;
       event.target.setAttribute('data-lang', previousLanguage);
 
-      // Close the language list
-      languageBlock.classList.remove('open');
-    }
+      // Закриваємо меню мов
+      languageItems.style.display = 'none';
+    });
   });
 
-  // Close the language list when clicking outside
+  // Закриття меню мов при кліку поза ним
   document.addEventListener('click', (event) => {
     if (!languageBlock.contains(event.target)) {
       languageBlock.classList.remove('open');
     }
   });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const heroImage = document.querySelector('.main__hero-image'); // Знаходимо зображення
