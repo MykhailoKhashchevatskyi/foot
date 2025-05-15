@@ -2002,6 +2002,11 @@ html {
   box-shadow: none;
   border: none;
 }
+@media (max-width: 520px) {
+  .footer__wrapper {
+    padding: 0 0 50px 0;
+  }
+}
 .footer__content {
   display: flex;
   justify-content: space-between;

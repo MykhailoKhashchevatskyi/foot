@@ -27,6 +27,9 @@
   align-items: center;
   justify-content: center;
   &__wrapper {
+    @media (max-width: 520px) {
+      padding: 0 0 50px 0;
+    }
   }
 
   &__content {
