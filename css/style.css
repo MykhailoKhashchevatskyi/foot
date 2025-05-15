@@ -794,9 +794,10 @@ html {
   transform: translateY(0); /* Текст повертається на місце */
 }
 
-.about {
+.main__wrapper {
   position: relative;
 }
+
 .about__wrapper {
   padding: 0px 0 90px 0;
   max-width: 800px;

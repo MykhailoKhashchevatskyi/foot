@@ -122,14 +122,15 @@
 
 
 
-
+.main__wrapper{
+  position: relative;
+}
 
 //about
 
 
 
 .about {
-  position: relative;
   &__wrapper {
     padding: 0px 0 90px 0;
     max-width: 800px;
