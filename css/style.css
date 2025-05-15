@@ -1975,6 +1975,284 @@ html {
   left: 0px;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/footer-image.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer button,
+.footer input,
+.footer textarea,
+.footer select {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.footer button:focus,
+.footer input:focus,
+.footer textarea:focus,
+.footer select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1525px) {
+  .footer__content {
+    flex-direction: column;
+    gap: 56px;
+    text-align: center;
+    align-items: center;
+  }
+}
+.footer__title {
+  color: #FFF;
+  /* desktop/header-1 */
+  font-family: "Bebas Neue Pro";
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 85%; /* 78.2px */
+  text-transform: uppercase;
+  width: 523px;
+  margin: 0 0 24px 0;
+}
+@media (max-width: 1589px) {
+  .footer__title {
+    width: 444px;
+  }
+}
+@media (max-width: 520px) {
+  .footer__title {
+    color: #FFF;
+    text-align: center;
+    /* mobile/header-1 */
+    font-family: "Bebas Neue Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 85%; /* 40.8px */
+    text-transform: uppercase;
+    max-width: 234px;
+  }
+}
+.footer__subtitle {
+  color: #FFF;
+  /* desktop/header-5 */
+  font-family: "Bebas Neue Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+}
+@media (max-width: 520px) {
+  .footer__subtitle {
+    color: #FFF;
+    text-align: center;
+    /* mobile/header-5 */
+    font-family: "Bebas Neue Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    text-transform: uppercase;
+  }
+}
+.footer__form {
+  display: flex;
+  flex: 1 0 444px;
+  flex-direction: column;
+  border-radius: 10px;
+  background: var(--base-100_10, rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  padding: 2px;
+  gap: 2px;
+}
+@media (max-width: 1525px) {
+  .footer__form {
+    flex: 1 0 100%;
+  }
+}
+.footer__name {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+  height: 48px;
+  color: #FFF;
+  border-radius: 10px 10px 0 0;
+  padding: 0 0 0 16px;
+}
+.footer__nameplaceholder {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+}
+@media (max-width: 520px) {
+  .footer__name {
+    height: 38px;
+  }
+}
+.footer__email {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+  height: 48px;
+  color: #FFF;
+  padding: 0 0 0 16px;
+}
+.footer__emailplaceholder {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+}
+@media (max-width: 520px) {
+  .footer__email {
+    height: 38px;
+  }
+}
+.footer__textarea {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+  height: 96px;
+  color: #FFF;
+  border-radius: 0 0 10px 10px;
+  padding: 16px;
+}
+.footer__textareaplaceholder {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+}
+.footer__label {
+  color: var(--base-100_20, rgba(255, 255, 255, 0.2));
+  margin: 12px 0;
+  /* desktop/body-M */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 19.2px */
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 520px) {
+  .footer__label {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+}
+.footer__check-box {
+  background: var(--base-900_50, rgba(0, 0, 0, 0.5));
+  -moz-appearance: none;
+       appearance: none;
+  margin: 0 16px 0 0;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+.footer__check-box:checked::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background-color: gray;
+}
+@media (max-width: 520px) {
+  .footer__check-box {
+    margin: 0 5px 0 0;
+  }
+}
+.footer__button {
+  justify-self: flex-end;
+  border-radius: 8px;
+  background: var(--base-900_100, #000);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  color: #FFF;
+  text-transform: uppercase;
+  color: var(--base-100_100, #FFF);
+  /* desktop/button */
+  font-family: "Bebas Neue Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 20px */
+  text-transform: uppercase;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.footer__button:hover {
+  background: var(--base-900_100, #ffffff);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  text-transform: uppercase;
+  color: var(--base-100_100, #000000);
+}
+
+.footer__contacts {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+}
+@media (max-width: 520px) {
+  .footer__contacts {
+    bottom: 60px;
+  }
+}
+.footer__fifa-logo {
+  margin: 0 16px 0 0;
+}
+@media (max-width: 744px) {
+  .footer__fifa-logo {
+    display: none;
+  }
+}
+.icon-links {
+  cursor: pointer;
+}
+.footer-mark {
+  position: absolute;
+  bottom: 42px;
+  left: 40px;
+  color: var(--base-100_100, rgba(255, 255, 255, 0.7137254902));
+  /* desktop/info */
+  font-family: "Bebas Neue Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 16px */
+  text-transform: uppercase;
+}
+@media (max-width: 979px) {
+  .footer-mark {
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .footer-mark {
+    bottom: 30px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 445px) {
+  .footer-mark {
+    left: 20px;
+    transform: translate(0, 0);
+    bottom: 30px;
+    font-size: 12px;
+  }
+}
+
 @font-face {
   font-family: "Bebas Neue Pro";
   src: local("Bebas Neue Pro SemiExpanded ExtraBold"), local("Bebas-Neue-Pro-SemiExpanded-ExtraBold"), url("../fonts/BebasNeuePro-SemiExpXBold.woff2") format("woff2"), url("../fonts/BebasNeuePro-SemiExpXBold.woff") format("woff"), url("../fonts/BebasNeuePro-SemiExpXBold.ttf") format("truetype");

@@ -22,10 +22,10 @@
         <div class="header__block">
           <nav class="header__menu">
             <ul class="header__menu-item menu-items">
-              <li class="menu-items__item"><a href="#">home</a></li>
-              <li class="menu-items__item"><a href="#about">about us</a></li>
-              <li class="menu-items__item"><a href="#services">services</a></li>
-              <li class="menu-items__item"><a href="">contact us</a></li>
+              <li class="menu-items__item"><a href="#" data-i18n="home">home</a></li>
+              <li class="menu-items__item"><a href="#about"data-i18n="about">about us</a></li>
+              <li class="menu-items__item"><a href="#services" data-i18n="services">services</a></li>
+              <li class="menu-items__item"><a href="#footer" data-i18n="contact">contact us</a></li>
             </ul>
           </nav>
           <div class="header__contacts">
@@ -51,6 +51,7 @@
             <li data-lang="UA">UA</li>
             <li data-lang="ES">ES</li>
             <li data-lang="RU">RU</li>
+            <li data-lang="EN">EN</li>
           </ul>
         </div>
         <div class="header__burger">
@@ -65,74 +66,91 @@
         <section class="main__hero">
           <div class="absolute__wrapper">
             <div class="main__border">
-              <img src="./img/border/left-top.png" alt="element of design" class="main__border-left-top">
-              <img src="./img/border/right-top.png" alt="element of design" class="main__border-right-top">
-              <img src="./img/border/left-bottom.png" alt="element of design" class="main__border-left-bottom">
-              <img src="./img/border/right-bottom.png" alt="element of design" class="main__border-right-bottom">
+              <img src="./img/border/left-top.png" alt="element of design" class="main__border-left-top" />
+              <img src="./img/border/right-top.png" alt="element of design" class="main__border-right-top" />
+              <img src="./img/border/left-bottom.png" alt="element of design" class="main__border-left-bottom" />
+              <img src="./img/border/right-bottom.png" alt="element of design" class="main__border-right-bottom" />
               <div class="main__contact">
-                <a href="" class="main__link">
-                  <img src="./img/border/bubble-chat-stroke-rounded 1.png" alt="message icon" class="main__message-icon">
-                  <span class="main__link-text">contact us</span>
+                <a href="#footer" class="main__link">
+                  <img
+                    src="./img/border/bubble-chat-stroke-rounded 1.png"
+                    alt="message icon"
+                    class="main__message-icon"
+                  />
+                  <span class="main__link-text" data-i18n="contact">contact us</span>
                 </a>
               </div>
-              <img src="./img/border/Vector.png" alt="arrow bottom" class="main__vector-arrow">
+              <img src="./img/border/Vector.png" alt="arrow bottom" class="main__vector-arrow" />
             </div>
             <div class="main__hero-content">
-              <img src="./img/hero/mask-logo.png" alt="big logotype" class="main__hero-image visible">
+              <img src="./img/hero/mask-logo.png" alt="big logotype" class="main__hero-image visible" />
               <div class="main__hero-text">
                 <h1>WELCOME TO PHANTOM</h1>
                 <h2>GAME CHANGER IN THE SPORTS MANAGEMENT</h2>
               </div>
             </div>
+          </div>
         </section>
-        <secttion class="about" id="about">
+        <section class="about" id="about">
           <div class="block-arrow-right">
-            <img src="./img/border-arrow-left.png" alt="" .class="right__img">
+            <img src="./img/border-arrow-left.png" alt="" class="right__img" />
           </div>
           <div class="block-arrow-left">
-            <img src="./img/border-arrow-right.png" alt="" .class="left__img">
+            <img src="./img/border-arrow-right.png" alt="" class="left__img" />
           </div>
           <div class="container">
             <div class="about__wrapper">
               <div class="about__main">
-                <h2 class="about__title">about us</h2>
-                <div class="abbout__info">
+                <h2 class="about__title" data-i18n="aboutTitle">about us</h2>
+                <div class="about__info">
                   <div class="about__image-block">
-                    <img src="./img/about/1img.png" alt="photo of football team" class="about__foot-img">
-                    <img src="./img/about/License-img.png" alt="license tag" class="about__license-img">
+                    <img src="./img/about/1img.png" alt="photo of football team" class="about__foot-img" />
+                    <img src="./img/about/License-img.png" alt="license tag" class="about__license-img" />
                   </div>
                   <div class="about__text-block">
                     <div class="about__subtitle-block">
-                      <h3 class="about__subtitle">PHANTOM FOOTBALL AGENCY is a FIFA-licensed company created to manage careers of professional football players. </h3>
-                      <div class="about__subtitle-line">We specialize in representing interests of professional athletes, discovering, developing and promoting of young talents, providing them with careful career planning in family-friendly atmosphere. </div>
+                      <h3 class="about__subtitle" data-i18n="aboutDesc1">
+                        PHANTOM FOOTBALL AGENCY is a FIFA-licensed company created to manage careers of professional football players.
+                      </h3>
+                      <div class="about__subtitle-line" data-i18n="aboutDesc2">
+                        We specialize in representing interests of professional athletes, discovering, developing and promoting of young talents, providing them with careful career planning in family-friendly atmosphere.
+                      </div>
                     </div>
                     <div class="about__text-cover">
-                      <p class="about__inf">We are fully committed to the <strong>success</strong> of our players and partners. Our team of <strong>competent</strong> and dedicated <strong>professionals</strong> offers the <strong>best services</strong> to our clients, including sponsorships, building brand, legal assistance, marketing and financial support. </p>
-                      <p class="about__inf">Thanks to our <strong>international contacts</strong> and strategic collaborations with coaches, scouts, sporting directors, and football clubs owners <strong>worldwide</strong>, we are able to create successful <strong>transfers</strong>, helping players make impactful moves that <strong>enhance</strong> their <strong>careers and benefit</strong> the clubs they join.</p>
-                    </div>
+                      <p class="about__inf" data-i18n="aboutDesc44">
+                        We are fully committed to the <strong>success</strong> of our players and partners. Our team of <strong>competent</strong> and dedicated <strong>professionals</strong> offers the <strong>best services</strong> to our clients, including sponsorships, building brand, legal assistance, marketing and financial support.
+                      </p>
+                      <p class="about__inf" data-i18n="aboutDesc45">
+                        Thanks to our <strong>international contacts</strong> and strategic collaborations with coaches, scouts, sporting directors, and football clubs owners <strong>worldwide</strong>, we are able to create successful <strong>transfers</strong>, helping players make impactful moves that <strong>enhance</strong> their <strong>careers and benefit</strong> the clubs they join.
+                      </p>
+                    </div>                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </secttion>
+        </section>
         <section class="services" id="services">
           <div class="container">
             <div class="services__wrapper">
-              <h2 class="services__title">services</h2>
+              <h2 class="services__title" data-i18n="servicesTitle">services</h2>
               <div class="services__block-width">
                 <div class="services__flex-direction">
                   <div class="services__info-block">
                     <div class="services__video-block-one">
-                        <video class="services__video-one" src="./video/1.mp4" autoplay loop muted playsinline></video>
+                      <video class="services__video-one" src="./video/1.mp4" autoplay loop muted playsinline></video>
                     </div>
                     <div class="services__text-block">
-                      <div class="services__text-one">We represent the interests of professional players and coaches, providing them with top-tier services, including sponsorships, contract negotiations, brand building, legal assistance, marketing, and financial support.</div>
-                      <div class="services__text-two">Our team of licensed agents, lawyers, and scouts takes care of all off-field aspects to ensure our clients can fully focus on their progress.</div>
+                      <div class="services__text-one" data-i18n="servicesBlock1Text1">
+                        We represent the interests of professional players and coaches, providing them with top-tier services, including sponsorships, contract negotiations, brand building, legal assistance, marketing, and financial support.
+                      </div>
+                      <div class="services__text-two" data-i18n="servicesBlock1Text2">
+                        Our team of licensed agents, lawyers, and scouts takes care of all off-field aspects to ensure our clients can fully focus on their progress.
+                      </div>
                     </div>
-                    <a href="#" class="services__read-this-button">Read more+</a>
+                    <a href="#" class="services__read-this-button" data-i18n="readMore">Read more+</a>
                     <div class="services__button-block">
-                      <a href="#present" class="services__read-more-button">learn more</a>
+                      <a href="#present" class="services__read-more-button" data-i18n="learnMore">learn more</a>
                     </div>
                   </div>
                   <div class="services__info-block">
@@ -140,240 +158,310 @@
                       <video class="services__video-two" src="./video/2.mp4" autoplay loop muted playsinline></video>
                     </div>
                     <div class="services__text-block">
-                      <div class="services__text-one">The transition from youth football to professional football is a crucial period. Sometimes, to make it pro, a player needs to change their team, league, or even country.</div>
-                      <div class="services__text-two">We receive requests from European and Asian clubs at all levels and divisions. We carefully select and offer the best opportunities to players, organizing trials and tryouts directly within football clubs and U-19 teams.</div>
+                      <div class="services__text-one" data-i18n="servicesBlock2Text1">
+                        The transition from youth football to professional football is a crucial period. Sometimes, to make it pro, a player needs to change their team, league, or even country.
+                      </div>
+                      <div class="services__text-two" data-i18n="servicesBlock2Text2">
+                        We receive requests from European and Asian clubs at all levels and divisions. We carefully select and offer the best opportunities to players, organizing trials and tryouts directly within football clubs and U-19 teams.
+                      </div>
                     </div>
-                    <a href="#" class="services__read-this-button">Read more+</a>
+                    <a href="#" class="services__read-this-button" data-i18n="readMore">Read more+</a>
                     <div class="services__button-block">
-                      <a href="#trials" class="services__read-more-button">learn more</a>
+                      <a href="#trials" class="services__read-more-button" data-i18n="learnMore">learn more</a>
                     </div>
                   </div>
                   <div class="services__info-block">
                     <div class="services__video-block-three">
                       <video class="services__video-three" src="./video/3.mp4" autoplay loop muted playsinline></video>
                       <div class="services__license">
-                        <img src="./img/fifa-li.png" alt="fifa license image" class="services__license-img">
+                        <img src="./img/fifa-li.png" alt="fifa license image" class="services__license-img" />
                       </div>
                     </div>
                     <div class="services__text-block">
-                      <div class="services__text-one">The discovery of young talents and placing them in the right environment is one of our main goals. Development and training with top-tier coaches, along with experience playing with and against the best academies in Europe, are key to success.</div>
-                      <div class="services__text-two">We collaborate with numerous academies in Spain, Poland, Ukraine, Portugal, Italy, Germany, Czech Republic, and other countries. After analyzing a young talent, we identify the best opportunity and assist with the entire process, including trials, legalization, contract negotiations, and continuous support throughout the years to help them become a PRO.</div>
+                      <div class="services__text-one" data-i18n="servicesBlock3Text1">
+                        The discovery of young talents and placing them in the right environment is one of our main goals. Development and training with top-tier coaches, along with experience playing with and against the best academies in Europe, are key to success.
+                      </div>
+                      <div class="services__text-two" data-i18n="servicesBlock3Text2">
+                        We collaborate with numerous academies in Spain, Poland, Ukraine, Portugal, Italy, Germany, Czech Republic, and other countries. After analyzing a young talent, we identify the best opportunity and assist with the entire process, including trials, legalization, contract negotiations, and continuous support throughout the years to help them become a PRO.
+                      </div>
                     </div>
-                    <a href="#" class="services__read-this-button">Read more+</a>
+                    <a href="#" class="services__read-this-button" data-i18n="readMore">Read more+</a>
                     <div class="services__button-block">
-                      <a href="#academies" class="services__read-more-button">learn more</a>
+                      <a href="#academies" class="services__read-more-button" data-i18n="learnMore">learn more</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section>      
         <section class="present" id="present">
           <div class="container">
             <div class="present__wrapper">
               <div class="present__block-title">
                 <div class="present__image-block">
-                  <img src="./img/managment.png" alt="photo of football MANAGEMENT" class="present__foot-img">
+                  <img src="./img/managment.png" alt="photo of football MANAGEMENT" class="present__foot-img" />
                 </div>
-                <h2 class="present__title">Representation & Professional Sports Management for Football Players</h2>
-                <p class="present__text">Our commitment to excellence is reflected in every aspect of our work. Why should you join us, and what can we offer?</p>
+                <h2 class="present__title" data-i18n="presentTitle">Representation & Professional Sports Management for Football Players</h2>
+                <p class="present__text" data-i18n="presentText">
+                  Our commitment to excellence is reflected in every aspect of our work. Why should you join us, and what can we offer?
+                </p>
               </div>
               <div class="present__width">
                 <div class="present__block-swiper">
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/1.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Legal 
-                        Support</h3>
+                      <div class="present__img-container">
+                        <img src="./img/1.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem1Title">Legal Support</h3>
                     </div>
-                    <p class="present__item-text">Expert assistance from a team of highly skilled sports lawyers.</p>
+                    <p class="present__item-text" data-i18n="presentItem1Text">
+                      Expert assistance from a team of highly skilled sports lawyers.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/2.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Career 
-                        Planning</h3>
+                      <div class="present__img-container">
+                        <img src="./img/2.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem2Title">Career Planning</h3>
                     </div>
-                    <p class="present__item-text">Thoughtful and strategic career development tailored to each player.</p>
+                    <p class="present__item-text" data-i18n="presentItem2Text">
+                      Thoughtful and strategic career development tailored to each player.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/3.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Transfers 
-                        and offers</h3>
+                      <div class="present__img-container">
+                        <img src="./img/3.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem3Title">Transfers and offers</h3>
                     </div>
-                    <p class="present__item-text">FIFA-licensed agents work to secure better contracts, salaries, and conditions.</p>
+                    <p class="present__item-text" data-i18n="presentItem3Text">
+                      FIFA-licensed agents work to secure better contracts, salaries, and conditions.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/4.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Contract 
-                        Negotiations</h3>
+                      <div class="present__img-container">
+                        <img src="./img/4.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem4Title">Contract Negotiations</h3>
                     </div>
-                    <p class="present__item-text">Focused on achieving the best possible conditions for our clients.</p>
+                    <p class="present__item-text" data-i18n="presentItem4Text">
+                      Focused on achieving the best possible conditions for our clients.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/5.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Personal Brand 
-                        Development</h3>
+                      <div class="present__img-container">
+                        <img src="./img/5.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem5Title">Personal Brand Development</h3>
                     </div>
-                    <p class="present__item-text">Essential for long-term success on 
-                      and off the field.</p>
+                    <p class="present__item-text" data-i18n="presentItem5Text">
+                      Essential for long-term success on and off the field.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/6.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Tax & Financial 
-                        Guidance</h3>
+                      <div class="present__img-container">
+                        <img src="./img/6.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem6Title">Tax & Financial Guidance</h3>
                     </div>
-                    <p class="present__item-text">Ensuring financial security and smart money management.</p>
+                    <p class="present__item-text" data-i18n="presentItem6Text">
+                      Ensuring financial security and smart money management.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/7.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Sponsorship 
-                        Deals</h3>
+                      <div class="present__img-container">
+                        <img src="./img/7.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem7Title">Sponsorship Deals</h3>
                     </div>
-                    <p class="present__item-text">Helping players build valuable partnerships.</p>
+                    <p class="present__item-text" data-i18n="presentItem7Text">
+                      Helping players build valuable partnerships.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/8.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Marketing & Social 
-                        Media Management</h3>
+                      <div class="present__img-container">
+                        <img src="./img/8.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem8Title">Marketing & Social Media Management</h3>
                     </div>
-                    <p class="present__item-text">Enhancing visibility and engagement.</p>
+                    <p class="present__item-text" data-i18n="presentItem8Text">
+                      Enhancing visibility and engagement.
+                    </p>
                   </div>
                   <div class="present__item">
                     <div class="present__item-title">
-                      <div class="present__img-container"><img src="./img/9.png" alt="icon" class="present__item-img"></div> 
-                      <h3 class="present__item-title-text">Health & 
-                        Wellbeing</h3>
+                      <div class="present__img-container">
+                        <img src="./img/9.png" alt="icon" class="present__item-img" />
+                      </div>
+                      <h3 class="present__item-title-text" data-i18n="presentItem9Title">Health & Wellbeing</h3>
                     </div>
-                    <p class="present__item-text">Personalized health and mental support</p>
+                    <p class="present__item-text" data-i18n="presentItem9Text">
+                      Personalized health and mental support
+                    </p>
                   </div>
                 </div>
               </div>
-              <p class="present__information">With our expertise and global network, we take care of everything off the pitch so you can focus on your game.</p>
+              <p class="present__information" data-i18n="presentInfo">
+                With our expertise and global network, we take care of everything off the pitch so you can focus on your game.
+              </p>
             </div>
           </div>
-        </section>
+        </section>  
         <section class="trials" id="trials">
           <div class="container">
             <div class="trials__wrapper">
               <div class="trials__block-title">
                 <div class="trials__image-block">
-                  <img src="./img/trials.png" alt="photo of football foot" class="trials__foot-img">
+                  <img src="./img/trials.png" alt="photo of football foot" class="trials__foot-img" />
                 </div>
-                <h2 class="trials__title">Football 
-                  Trials & Tryouts 
-                  (Ages 18-23)</h2>
-                <p class="trials__text">Thanks to our international collaborations with football clubs at different levels, we provide opportunities for players to attend trials and tryouts directly with clubs actively seeking players in their position and playing style (type).</p>
+                <h2 class="trials__title" data-i18n="trialsTitle">
+                  Football Trials & Tryouts (Ages 18-23)
+                </h2>
+                <p class="trials__text" data-i18n="trialsIntro">
+                  Thanks to our international collaborations with football clubs at different levels, we provide opportunities for players to attend trials and tryouts directly with clubs actively seeking players in their position and playing style (type).
+                </p>
               </div>
               <div class="tab__buttons">
-                <div class="tab__button-step">Step-by-Step<br> Process</div>
-                <div class="tab__button-sup">Support &<br> Assistance</div>
+                <div class="tab__button-step" data-i18n="trialsStepButton">Step-by-Step<br /> Process</div>
+                <div class="tab__button-sup" data-i18n="trialsSupportButton">Support &<br /> Assistance</div>
               </div>
               <div class="trials__block-tabs tab">
                 <div class="tab__step">
-                  <h3 class="tab__title">Step-by-Step Process</h3>
+                  <h3 class="tab__title" data-i18n="trialsStepTitle">Step-by-Step Process</h3>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/1.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/1.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Submit Your Materials</div>
+                      <div class="tab__item-name" data-i18n="submitMaterialsTitle">Submit Your Materials</div>
                       <ul>
-                        <li class="tab__item-text">Send us your Transfermarkt link, CV, and highlight video (YouTube link).</li>
+                        <li class="tab__item-text" data-i18n="submitMaterialsText">
+                          Send us your Transfermarkt link, CV, and highlight video (YouTube link).
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/2.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/2.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Analysis & Consultation</div>
+                      <div class="tab__item-name" data-i18n="analysisTitle">Analysis & Consultation</div>
                       <ul>
-                        <li class="tab__item-text">Our team analyzes your materials and provides professional feedback on your level.</li>
-                        <li class="tab__item-text">We advise you on the most suitable country and division to start your journey, explaining the potential benefits and career perspectives.</li>
+                        <li class="tab__item-text" data-i18n="analysisText1">
+                          Our team analyzes your materials and provides professional feedback on your level.
+                        </li>
+                        <li class="tab__item-text" data-i18n="analysisText2">
+                          We advise you on the most suitable country and division to start your journey, explaining the potential benefits and career perspectives.
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/3.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/3.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Scouting & Agent Networking</div>
+                      <div class="tab__item-name" data-i18n="scoutingTitle">Scouting & Agent Networking</div>
                       <ul>
-                        <li class="tab__item-text">Once we’ve agreed to work together, we forward your profile to our scouts and agents in the chosen region.</li>
+                        <li class="tab__item-text" data-i18n="scoutingText">
+                          Once we’ve agreed to work together, we forward your profile to our scouts and agents in the chosen region.
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/4.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/4.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Finding the Best Opportunity</div>
+                      <div class="tab__item-name" data-i18n="findingOpportunityTitle">Finding the Best Opportunity</div>
                       <ul>
-                        <li class="tab__item-text">Our team presents your profile to clubs, searching for the best possible options.</li>
-                        <li class="tab__item-text">We select the best option — club that needs a player of your position and style, and offers the best salary, opportunities, and conditions.</li>
+                        <li class="tab__item-text" data-i18n="findingOpportunityText1">
+                          Our team presents your profile to clubs, searching for the best possible options.
+                        </li>
+                        <li class="tab__item-text" data-i18n="findingOpportunityText2">
+                          We select the best option — club that needs a player of your position and style, and offers the best salary, opportunities, and conditions.
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/5.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/5.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Trial Invitation & Logistics</div>
+                      <div class="tab__item-name" data-i18n="trialInvitationTitle">Trial Invitation & Logistics</div>
                       <ul>
-                        <li class="tab__item-text">You receive all the necessary details, including:</li>
-                        <li class="tab__item-text">Club name & location</li>
-                        <li class="tab__item-text">Arrival date & trial duration (typically 7-14 days)</li>
-                        <li class="tab__item-text">Accommodation/hotel & meals</li>
-                        <li class="tab__item-text">Salary expectations & possible contract details</li>
+                        <li class="tab__item-text" data-i18n="trialInvitationIntro">You receive all the necessary details, including:</li>
+                        <li class="tab__item-text" data-i18n="trialInvitationClub">Club name & location</li>
+                        <li class="tab__item-text" data-i18n="trialInvitationDate">Arrival date & trial duration (typically 7-14 days)</li>
+                        <li class="tab__item-text" data-i18n="trialInvitationAccommodation">Accommodation/hotel & meals</li>
+                        <li class="tab__item-text" data-i18n="trialInvitationSalary">Salary expectations & possible contract details</li>
                       </ul>
                     </div>
                   </div>
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/6.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/6.png" alt="number one" class="tab__items-icon" />
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Arrival & Trial Period</div>
+                      <div class="tab__item-name" data-i18n="arrivalTrialTitle">Arrival & Trial Period</div>
                       <ul>
-                        <li class="tab__item-text">Upon arrival, our agent or club administrator will meet you and take you to your accommodation.</li>
-                        <li class="tab__item-text">From this point on, everything depends on your performance.</li>
+                        <li class="tab__item-text" data-i18n="arrivalTrialText1">
+                          Upon arrival, our agent or club administrator will meet you and take you to your accommodation.
+                        </li>
+                        <li class="tab__item-text" data-i18n="arrivalTrialText2">
+                          From this point on, everything depends on your performance.
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="tab__support">
-                  <h3 class="tab__title">Support & Assistance</h3>
+                  <h3 class="tab__title" data-i18n="supportTitle">Support & Assistance</h3>
                   <ul>
-                    <li class="tab__item-text">From the start, we assist with documentation, visa, travel arrangements, SIM cards, and other necessities.</li>
-                    <li class="tab__item-text">Throughout the trial, we maintain contact with the club, keeping you updated with feedback and insights.</li>
-                    <li class="tab__item-text">If you show yourself successfully you’ll sign the contract with the club that offers the best conditions, adapt to the environment, showcase your skills, and potentially move to higher divisions. Your progress depends entirely on your commitment and performance.</li>
+                    <li class="tab__item-text" data-i18n="supportText1">
+                      From the start, we assist with documentation, visa, travel arrangements, SIM cards, and other necessities.
+                    </li>
+                    <li class="tab__item-text" data-i18n="supportText2">
+                      Throughout the trial, we maintain contact with the club, keeping you updated with feedback and insights.
+                    </li>
+                    <li class="tab__item-text" data-i18n="supportText3">
+                      If you show yourself successfully you’ll sign the contract with the club that offers the best conditions, adapt to the environment, showcase your skills, and potentially move to higher divisions. Your progress depends entirely on your commitment and performance.
+                    </li>
                   </ul>
-                  <p class="tab__block-text">We can offer a representation contract with our agency to the interesting players who started working with us.</p>
-                  <p class="tab__block-text">Most trials take place during transfer windows, but many clubs also invite players during the season to evaluate them, provide time for adaptation, and make a decision. When the transfer window opens, clubs can sign you immediately.</p>
-                  <p class="tab__block-text">This is your chance to take your career to the next level - are you ready?</p>
+                  <p class="tab__block-text" data-i18n="supportContractOffer">
+                    We can offer a representation contract with our agency to the interesting players who started working with us.
+                  </p>
+                  <p class="tab__block-text" data-i18n="supportTrialTiming1">
+                    Most trials take place during transfer windows, but many clubs also invite players during the season to evaluate them, provide time for adaptation, and make a decision. When the transfer window opens, clubs can sign you immediately.
+                  </p>
+                  <p class="tab__block-text" data-i18n="supportTrialTiming2">
+                    This is your chance to take your career to the next level - are you ready?
+                  </p>
                   <div class="tab__apr-block">
                     <div class="tab__apr-image-block">
-                      <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
+                      <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img" />
                     </div>
-                    <p class="tab__apr-text">Accommodation is always provided</p>
+                    <p class="tab__apr-text" data-i18n="supportAccommodation">Accommodation is always provided</p>
                   </div>
                   <div class="tab__apr-block">
                     <div class="tab__apr-image-block">
-                      <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
+                      <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img" />
                     </div>
-                    <p class="tab__apr-text">We represent your interests throughout the entire process—from your first day at the trial to contract negotiations if you receive an offer.</p>
+                    <p class="tab__apr-text" data-i18n="supportRepresentation">
+                      We represent your interests throughout the entire process—from your first day at the trial to contract negotiations if you receive an offer.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -388,81 +476,83 @@
                   <img src="./img/academies.png" alt="photo of football foot" class="academies__foot-img">
                   <img src="./img/about/License-img.png" alt="photo of football foot" class="academies__foot-img">
                 </div>
-                <h2 class="academies__title">Football Tryouts in 
-                  Academies & Scholarships 
-                  (Ages 13-18)</h2>
-                <p class="academies__text">We collaborate with elite-level academies to provide the best opportunities for young players. Our team ensures players’ well-being and communicates directly with club staff—not just as agents, but as trusted professionals who are respected and taken seriously. This allows us to gather valuable insights and honest feedback, which we relay to players and their families. Additionally, we help talented young athletes secure opportunities in top academies that match their potential.</p>
+                <h2 class="academies__title" data-i18n="academiesTitle">Football Tryouts in Academies & Scholarships (Ages 13-18)</h2>
+                <p class="academies__text" data-i18n="academiesIntro">We collaborate with elite-level academies to provide the best opportunities for young players. Our team ensures players’ well-being and communicates directly with club staff—not just as agents, but as trusted professionals who are respected and taken seriously. This allows us to gather valuable insights and honest feedback, which we relay to players and their families. Additionally, we help talented young athletes secure opportunities in top academies that match their potential.</p>
               </div>
+        
               <div class="academies__buttons">
-                <div class="academies__button-step">Why<br>
-                  Our Guidance<br>
-                  Matters</div>
-                <div class="academies__button-sup">Finding<br>
-                  the Right Path<br>
-                  to Success</div>
+                <div class="academies__button-step" data-i18n="academiesButtonStep">Why<br>Our Guidance<br>Matters</div>
+                <div class="academies__button-sup" data-i18n="academiesButtonSupport">Finding<br>the Right Path<br>to Success</div>
               </div>
+        
               <div class="trials__block-tabs tab">
                 <div class="tab__step academies-step">
-                  <h3 class="tab__title">Why Our Guidance Matters</h3>
-                  <p class="tab__block-text">Many parents—or even young players themselves—reach out to us seeking a better academy, club, or U-19 team. They also require expert negotiation support to avoid signing long-term contracts with unfavorable conditions and hidden pitfalls. This is why having a competent agent from an early stage is crucial.</p>
-                  <p class="tab__block-text">We are officially authorized by FIFA to represent minors, and in collaboration with parents, we ensure a safe and supportive environment for young athletes, strictly following all FIFA regulations.</p>
-                  <h3 class="tab__titletwo">Finding the Right Path to Success</h3>
-                  <p class="tab__block-text">The discovery of young talents and placing them in the right environment is one of our main priorities. Development under top-tier coaches, combined with competitive experience against the best academies in Europe, is key to achieving success.</p>
-                  <p class="tab__block-text">We work with leading academies across Spain, Poland, Ukraine, Portugal, Italy, Germany, the Czech Republic, and other countries. Once we evaluate a young player’s potential, we find the best available opportunity and provide full assistance throughout the entire process, including:</p>
+                  <h3 class="tab__title" data-i18n="academiesWhyTitle">Why Our Guidance Matters</h3>
+                  <p class="tab__block-text" data-i18n="academiesWhyText1">Many parents—or even young players themselves—reach out to us seeking a better academy, club, or U-19 team. They also require expert negotiation support to avoid signing long-term contracts with unfavorable conditions and hidden pitfalls. This is why having a competent agent from an early stage is crucial.</p>
+                  <p class="tab__block-text" data-i18n="academiesWhyText2">We are officially authorized by FIFA to represent minors, and in collaboration with parents, we ensure a safe and supportive environment for young athletes, strictly following all FIFA regulations.</p>
+                  <h3 class="tab__titletwo" data-i18n="academiesPathTitle">Finding the Right Path to Success</h3>
+                  <p class="tab__block-text" data-i18n="academiesPathText1">The discovery of young talents and placing them in the right environment is one of our main priorities. Development under top-tier coaches, combined with competitive experience against the best academies in Europe, is key to achieving success.</p>
+                  <p class="tab__block-text" data-i18n="academiesPathText2">We work with leading academies across Spain, Poland, Ukraine, Portugal, Italy, Germany, the Czech Republic, and other countries. Once we evaluate a young player’s potential, we find the best available opportunity and provide full assistance throughout the entire process, including:</p>
                 </div>
+        
                 <div class="tab__support academies-support">
-                  <h3 class="tab__title">How to Get Started</h3>
+                  <h3 class="tab__title" data-i18n="academiesHowTitle">How to Get Started</h3>
+        
                   <div class="tab__items">
                     <div class="tab__items-image">
                       <img src="./img/present/1.png" alt="number one" class="tab__items-icon">
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Submit Your Materials</div>
+                      <div class="tab__item-name" data-i18n="academiesStep1Title">Submit Your Materials</div>
                       <ul>
-                        <li class="tab__item-text">Send us your Transfermarkt link, CV, and highlight video (YouTube link).</li>
+                        <li class="tab__item-text" data-i18n="academiesStep1Text">Send us your Transfermarkt link, CV, and highlight video (YouTube link).</li>
                       </ul>
                     </div>
                   </div>
+        
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/2.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/2.png" alt="number two" class="tab__items-icon">
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Evaluation & Feedback</div>
+                      <div class="tab__item-name" data-i18n="academiesStep2Title">Evaluation & Feedback</div>
                       <ul>
-                        <li class="tab__item-text">Our experts analyze your materials and provide professional feedback on your level and potential.</li>
+                        <li class="tab__item-text" data-i18n="academiesStep2Text">Our experts analyze your materials and provide professional feedback on your level and potential.</li>
                       </ul>
                     </div>
                   </div>
+        
                   <div class="tab__items">
                     <div class="tab__items-image">
-                      <img src="./img/present/3.png" alt="number one" class="tab__items-icon">
+                      <img src="./img/present/3.png" alt="number three" class="tab__items-icon">
                     </div>
                     <div class="tab__items-content">
-                      <div class="tab__item-name">Trial & Representation</div>
+                      <div class="tab__item-name" data-i18n="academiesStep3Title">Trial & Representation</div>
                       <ul>
-                        <li class="tab__item-text">Once we agree to work together, we offer:</li>
-                        <li class="tab__item-text">A tryout, trial or scholarship in the most suitable academy, club, or U-19 team.</li>
-                        <li class="tab__item-text">Full representation to manage your career and secure the best opportunities.</li>
+                        <li class="tab__item-text" data-i18n="academiesStep3Text1">Once we agree to work together, we offer:</li>
+                        <li class="tab__item-text" data-i18n="academiesStep3Text2">A tryout, trial or scholarship in the most suitable academy, club, or U-19 team.</li>
+                        <li class="tab__item-text" data-i18n="academiesStep3Text3">Full representation to manage your career and secure the best opportunities.</li>
                       </ul>
                     </div>
                   </div>
-                  <p class="tab__block-text">With our expertise and network, we help young players maximize their potential and reach the highest level. Let’s take the first step toward your professional football journey!</p>
+        
+                  <p class="tab__block-text" data-i18n="academiesFinalText">With our expertise and network, we help young players maximize their potential and reach the highest level. Let’s take the first step toward your professional football journey!</p>
                 </div>
               </div>
+        
               <div class="info__block-points">
                 <div class="info__block-left">
                   <div class="tab__apr-block align-center">
                     <div class="tab__apr-image-block">
                       <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
                     </div>
-                    <p class="tab__apr-text">Trials & Tryouts at top academies</p>
+                    <p class="tab__apr-text" data-i18n="academiesPoint1">Trials & Tryouts at top academies</p>
                   </div>
                   <div class="tab__apr-block align-center">
                     <div class="tab__apr-image-block">
                       <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
                     </div>
-                    <p class="tab__apr-text">Legalization & Documentation Support</p>
+                    <p class="tab__apr-text" data-i18n="academiesPoint2">Legalization & Documentation Support</p>
                   </div>
                 </div>
                 <div class="info__block-right">
@@ -470,22 +560,70 @@
                     <div class="tab__apr-image-block">
                       <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
                     </div>
-                    <p class="tab__apr-text">Contract Negotiations</p>
+                    <p class="tab__apr-text" data-i18n="academiesPoint3">Contract Negotiations</p>
                   </div>
                   <div class="tab__apr-block align-center">
                     <div class="tab__apr-image-block">
                       <img src="./img/present/apr.png" alt="aprove icon" class="tab__apr-img">
                     </div>
-                    <p class="tab__apr-text">Ongoing Career Guidance & Representation</p>
+                    <p class="tab__apr-text" data-i18n="academiesPoint4">Ongoing Career Guidance & Representation</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section>        
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__content-item">
+              <h2 class="footer__title" id="footer" >Get in touch<br> and shine <br> with us</h2>
+              <p class="footer__subtitle" >No Risk, No Reward. </p>
+            </div>
+            <form class="footer__form" action="https://formspree.io/f/xnndlyeg" method="post">
+              <input class="footer__name" type="text" id="name" name="name" placeholder="Name" required data-i18n-placeholder="footerNamePlaceholder" />
+              <input class="footer__email" type="email" id="email" name="email" placeholder="E-mail" required data-i18n-placeholder="footerEmailPlaceholder" />
+              <textarea class="footer__textarea" id="message" name="message" rows="5" style="width: 100%; resize: none;" placeholder="Message" required data-i18n-placeholder="footerMessagePlaceholder"></textarea>
+              <label class="footer__label">
+                <input class="footer__check-box" type="checkbox" name="terms" required />
+                <span data-i18n="footerCheckboxText">I’m ready for a successful fruitful cooperation.</span>
+              </label>
+              <button class="footer__button" type="submit" data-i18n="sendMessage">Send message</button>
+            </form>
+          </div>
+          <div class="footer__contacts">
+            <img src="./img/header/fifa.png" alt="fifa logotype" class="footer__fifa-logo">
+            <div class="footer__icon-block icon-links">
+              <div class="footerlinks__icon">
+                <img src="./img/header/tm-icon.svg" alt="tm link button" class="icon-links__tm" onclick="window.open('https://www.transfermarkt.com/phantom-football-agency/beraterfirma/berater/9663#google_vignette', '_blank')">
+              </div>
+              <div class="footer-links__icon">
+                <img src="./img/header/instagram-icon.svg" alt="instagram link button" class="icon-links__instagram" onclick="window.open('https://www.instagram.com/phantomagency?igsh=MXNvMHZiMDlueDJqNQ==', '_blank')">
+              </div>
+              <div class="footer-links__icon">
+                <a href="mailto:phantomfootballagency@gmail.com">
+                  <img src="./img/header/email-icon.svg" alt="email link button" class="icon-links__email">
+                </a>
+              </div>  
+              <div class="footer-links__icon">
+                <a href="https://www.tiktok.com/@phantomagency?_t=ZM-8wLSV5yCO8r&_r=1" target="_blank">
+                  <img src="./img/header/tiktok.svg" alt="tiktok link button" class="icon-links__email">
+                </a>
+              </div>  
+              <div class="footer-links__icon">
+                <a href="https://www.facebook.com/share/1ASeXUsLSZ/?mibextid=wwXIfr" target="_blank">
+                  <img src="./img/header/fasebook.svg" alt="facebook link button" class="icon-links__email">
+                </a>
+              </div>
+            </div>
+          </div>
+          <span class="footer-mark">© 2025 Phantom football agency</span>
+        </div>
+      </div>
+    </footer>    
   </div>
   <script src="./js/script.js"></script>
 </body>
