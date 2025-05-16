@@ -12,6 +12,9 @@
   }
 }
 
+.main__hero {
+  position: relative;
+}
 
 .main__hero-text {
   text-align: center;
@@ -172,19 +175,22 @@
       filter: blur(2px);
     }
     &::after {
-      // position: absolute;
-      // content: 'about us';
-      // text-wrap: no-wrap;
-      // max-width: 266px;
-      // top: 30px;
-      // transform: translate(-100%);
-      // left: center;
-      // opacity: 0.2;
-      // background: radial-gradient(145.99% 128.12% at 50% 13.13%, var(--accent-lavabloom, #A569FF) 0%, var(--base-900_100, #000) 100%);
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      // filter: blur(2px);
+      position: absolute;
+      content: 'about us';
+      text-wrap: no-wrap;
+      width: 266px;
+      top: 30px;
+      transform: translate(-100%);
+      left: center;
+      opacity: 0.2;
+      background: radial-gradient(145.99% 128.12% at 50% 13.13%, var(--accent-lavabloom, #A569FF) 0%, var(--base-900_100, #000) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: blur(2px);
+      @media (max-width: 460.98px){
+        transform: translate(-75%);
+      }
     }
     @media (max-width: 1280.98px) {
       
@@ -644,19 +650,34 @@
   }
 
   &__img-container {
+    flex: 0 0 auto;
+    position: relative;
     margin: 0 12px 0 0;
-    width: 38px;
-    height: 38px;
-    overflow: hidden; /* Обрізає все, що виходить за межі контейнера */
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    background: var(--base-100_10, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(12px);
+    &::after{
+      position: absolute;
+      content: '';
+      background-color: #A569FF;
+      filter: blur(34px);
+      min-width: 42px;
+      border-radius: 8px;
+      min-height: 42px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__item-img {
-    width: 96px;
-    height: 100%;
-    object-fit: cover; /* Зберігає пропорції та заповнює контейнер */
-    transform: scale(3); /* Збільшує центральну область */
+    position: relative;
+    z-index: 10;
+    color: var(--base-100_100, #FFF);
   }
 
   &__item-title-text {
@@ -847,11 +868,43 @@
   }
 
   &__items-icon {
-    min-width: 36px;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--base-100_50, rgba(255, 255, 255, 0.50));
+    background: var(--base-900_100, #000);
+    display: flex;
+    width: 36px;
+    height: 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--base-100_100, #FFF);
+
+    /* desktop/button */
+    font-family: "Bebas Neue Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 20px */
+    text-transform: uppercase;
+    &::after{
+      position: absolute;
+      content: '';
+      background-color: #A569FF;
+      filter: blur(34px);
+      min-width: 36px;
+      border-radius: 8px;
+      min-height: 36px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
   }
 
   &__items-content {
-    padding: 5px 0 0 0;
+    padding: 7px 0 0 0;
   }
 
   &__item-name {
@@ -899,16 +952,14 @@
     margin: 0 0 12px 0;
     padding: 20px;
     border-radius: 12px;
+    align-items: center;
     border: 1px solid var(--base-100_20, rgba(255, 255, 255, 0.20));
   }
 
   &__apr-img {
     min-width: 48px;
     max-width: 48px;
-    @media (max-width: 476px) {
-      min-width: 36px;
-      max-width: 36px;
-    }
+    padding: 10px;
   }
 
   &__apr-text {
@@ -1213,6 +1264,23 @@
   }
 
   &__apr-image-block {
+    position: relative;
+    border-radius: 8px;
+    background: var(--base-100_10, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(12px);
+    &::after{
+      position: absolute;
+      content: '';
+      background-color: #A569FF;
+      filter: blur(34px);
+      min-width: 38px;
+      border-radius: 8px;
+      min-height: 38px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
   }
 
   &__apr-img {

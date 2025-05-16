@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       preloader.remove();
     }, 500);
-  }, 4000); // Мінімальний час прелоадера — 3 секунди
+  }, 3500); // Мінімальний час прелоадера — 3 секунди
 });
 
 function updateLanguage(lang) {
@@ -416,7 +416,7 @@ const translations = {
     presentItem6Text: "Забезпечення фінансової безпеки та розумного управління коштами.",
     presentItem7Title: "Спонсорські угоди",
     presentItem7Text: "Допомога гравцям у створенні цінних партнерств.",
-    presentItem8Title: "Маркетинг і управління соціальними мережами",
+    presentItem8Title: "Маркетинг і управління соц-мережами",
     presentItem8Text: "Підвищення видимості та залучення аудиторії.",
     presentItem9Title: "Здоров'я та благополуччя",
     presentItem9Text: "Індивідуальна підтримка здоров'я та психічного стану",
@@ -532,7 +532,7 @@ const translations = {
     presentItem6Text: "Обеспечение финансовой безопасности и разумного управления деньгами.",
     presentItem7Title: "Спонсорские сделки",
     presentItem7Text: "Помощь игрокам в создании ценных партнерств.",
-    presentItem8Title: "Маркетинг и управление социальными сетями",
+    presentItem8Title: "Маркетинг и управление соц-сетями",
     presentItem8Text: "Повышение видимости и вовлеченности.",
     presentItem9Title: "Здоровье и благополучие",
     presentItem9Text: "Индивидуальная поддержка здоровья и психического состояния",

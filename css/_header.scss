@@ -45,10 +45,10 @@
 
 		&__contacts {
 			display: flex;
-			margin: 0 16px 0 0;
+			margin: 0 12px 0 0;
 			@media (max-width: 748.98px) {
 				margin: 0;
-				padding: 16px 0;
+				padding: 12px 0;
 			}
 		}
 
@@ -136,7 +136,7 @@
 			padding: 48px;
 			display: flex;
 			justify-content: space-between;
-			@media (max-width: 744.98px) {
+			@media (max-width: 748.98px) {
 				padding: 24px 16px;
 			}
 		}
@@ -146,7 +146,7 @@
 	background-color: #ffffff10;
 	display: flex;
 	backdrop-filter: blur(12px);
-	@media (max-width: 744.98px){
+	@media (max-width: 748.98px){
 		flex-direction: column;
 		background-color: transparent;
 		backdrop-filter: none;
@@ -169,7 +169,7 @@
 				font-size: 10px;
 				padding: 10px 12px;
 			}
-			@media (max-width: 744.98px){
+			@media (max-width: 748.98px){
 				font-size: 16px;
 				padding: 8px	36px;
 				align-items: center;
@@ -180,7 +180,7 @@
 				@media (max-width: 918px) {
 					padding: 10px 12px;
 				}
-				@media (max-width: 744.98px){
+				@media (max-width: 748.98px){
 					margin: 0;
 					padding: 8px 3 0px;
 				}
@@ -191,7 +191,7 @@
 				@media (max-width: 918px) {
 					padding: 10px 12px;
 				}
-				@media (max-width: 744.98px){
+				@media (max-width: 748.98px){
 					margin: 0;
 					padding: 8px 30px;
 				}
@@ -212,6 +212,7 @@
 	text-align: center;
 		&__icon {
 			max-width: 32px;
+			height: 32px;
 			cursor: pointer;
 			@media (max-width: 744.98px) {
 				max-width: 24px;
@@ -219,14 +220,54 @@
 		}
 
 		&__tm {
-
+			width: 32px;
+			height: 32px;
+			@media (max-width: 748.98px) {
+				width: 24px;
+				height: 24px;
+			}
+			&:hover {
+				.opacity{
+						fill-opacity: 0.1;
+				}
+				.stroke{
+						stroke: white;
+				}
+			}
 		}
 
 		&__instagram {
+			width: 32px;
+			height: 32px;
+			@media (max-width: 748.98px) {
+				width: 24px;
+				height: 24px;
+			}
+			&:hover {
+				.opacity{
+						fill-opacity: 0.1;
+				}
+				.stroke{
+						stroke: white;
+				}
+			}
 		}
 
 		&__email {
-
+			width: 32px;
+			height: 32px;
+			@media (max-width: 748.98px) {
+				width: 24px;
+				height: 24px;
+			}
+			&:hover {
+				.opacity{
+						fill-opacity: 0.1;
+				}
+				.stroke{
+						stroke: white;
+				}
+			}
 		}
 }
 
@@ -250,3 +291,4 @@
 			}
 	}
 }
+
