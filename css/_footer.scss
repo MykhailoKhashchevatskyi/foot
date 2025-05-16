@@ -314,3 +314,44 @@
     font-size: 12px;
   }
 }
+
+
+.footer__thx{
+  display: none;
+  height: 329px;
+  // display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: var(--base-100_10, rgba(255, 255, 255, 0.10));
+  backdrop-filter: blur(12px);
+  padding: 32px;
+}
+
+.footer__thx-s{  
+  color: #FFF;
+  text-align: start;
+  /* desktop/header-5 */
+  font-family: "Bebas Neue Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+  @media (max-width: 477px) {
+    font-size: 24px;
+  }
+}
+.footer__thx-p{  
+  color: #FFF;
+  text-align: start;
+  /* desktop/body-L */
+  font-family: "Bebas Neue Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 24px */
+  @media (max-width: 477px) {
+    font-size: 16px;
+  }
+}

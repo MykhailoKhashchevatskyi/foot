@@ -719,3 +719,36 @@ const translations = {
     aboutDesc45: "Gracias a nuestros contactos internacionales y colaboraciones estratégicas con entrenadores, cazatalentos, directores deportivos y propietarios de clubes de fútbol en todo el mundo, podemos crear transferencias exitosas, ayudando a los jugadores a realizar movimientos impactantes que mejoran sus carreras y benefician a los clubes a los que se unen."    
   }
 };
+
+
+
+
+  document.querySelector('.footer__form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = this;
+    const thankYouBlock = document.querySelector('.footer__thx');
+
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset(); // Очищаємо форму
+        form.style.display = 'none'; // Ховаємо форму
+        if (thankYouBlock) {
+          thankYouBlock.style.display = 'flex'; // Показуємо блок подяки
+        }
+      } else {
+        console.error("Помилка при надсиланні форми");
+      }
+    })
+    .catch(error => {
+      console.error("Щось пішло не так: ", error);
+    });
+  });
+
