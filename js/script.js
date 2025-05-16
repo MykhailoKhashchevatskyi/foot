@@ -752,3 +752,34 @@ const translations = {
     });
   });
 
+
+
+  // const leftArrow = document.querySelector('.image-arrow-left');
+  // const rightArrow = document.querySelector('.image-arrow-right');
+  // const footer = document.querySelector('footer');
+  
+  // window.addEventListener('scroll', handleArrowDisplay);
+  // window.addEventListener('resize', handleArrowDisplay); // важливо при зміні розміру вікна
+  
+  // function handleArrowDisplay() {
+  //   const footerTop = footer.getBoundingClientRect().top;
+  //   const windowHeight = window.innerHeight;
+  //   const isSmallScreen = window.innerWidth <= 1440.89;
+  
+  //   // Якщо екран маленький — взагалі ховаємо стрілки
+  //   if (isSmallScreen) {
+  //     leftArrow.style.display = 'none';
+  //     rightArrow.style.display = 'none';
+  //     return;
+  //   }
+  
+  //   // Якщо футер на екрані — ховаємо стрілки
+  //   if (footerTop <= windowHeight) {
+  //     leftArrow.style.display = 'none';
+  //     rightArrow.style.display = 'none';
+  //   } else {
+  //     leftArrow.style.display = 'block';
+  //     rightArrow.style.display = 'block';
+  //   }
+  // }
+  

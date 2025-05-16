@@ -84,6 +84,7 @@ select {
 }
 html {
   font-family: "Bebas Neue Pro";
+  overflow-x: hidden;
   background: #000;
   color: #fff;
 }
@@ -301,11 +302,16 @@ html {
 
 .block-arrow-right {
   position: sticky;
-  display: inline-block;
+  display: none;
   content: "";
   top: 40%;
   left: 0;
   width: 80px;
+}
+@media (max-width: 1440px) {
+  .block-arrow-right {
+    display: inline-block;
+  }
 }
 @media (max-width: 745px) {
   .block-arrow-right {
@@ -316,11 +322,16 @@ html {
 
 .block-arrow-left {
   position: sticky;
-  display: inline-block;
+  display: none;
   content: "";
   top: 40%;
   left: 100%;
   width: 80px;
+}
+@media (max-width: 1440px) {
+  .block-arrow-left {
+    display: inline-block;
+  }
 }
 @media (max-width: 745px) {
   .block-arrow-left {
@@ -455,6 +466,45 @@ html {
 @media (max-width: 1200px) {
   .preloader-active .main__border-right-bottom {
     transform: translate(-50px, -200px);
+  }
+}
+
+.sticky-block {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #000000; /* Чорний фон */
+  width: 100%;
+  height: 1px;
+}
+
+.image-arrow-left {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: 0px;
+  width: 189px;
+  height: auto;
+}
+@media (max-width: 1440.98px) {
+  .image-arrow-left {
+    left: -80px;
+    display: none;
+  }
+}
+
+.image-arrow-right {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  right: -300px;
+  width: 500px;
+  height: auto;
+}
+@media (max-width: 1440.98px) {
+  .image-arrow-right {
+    right: -395px;
+    display: none;
   }
 }
 
@@ -879,7 +929,7 @@ html {
 }
 
 .about__wrapper {
-  padding: 0px 0 90px 0;
+  padding: 90px 0 90px 0;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -2138,6 +2188,7 @@ html {
 
 .footer {
   display: flex;
+  z-index: 2;
   flex-direction: column;
   width: 100%;
   height: 100vh;
